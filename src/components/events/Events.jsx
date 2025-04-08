@@ -14,7 +14,7 @@ const Events = () => {
     <>
       <section className="events">
         <div className="small-div-events">
-          <h1>Events</h1>
+          <h1>Event</h1>
         </div>
         <div className="events-container">
           <div className="img-event">
