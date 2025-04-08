@@ -1,0 +1,114 @@
+.about-first {
+  width: 100%;
+  min-height: 80vh;
+}
+.small-div-about-first {
+  width: 100%;
+  background-color: #110d57;
+  height: 160px;
+}
+.small-div-about-first h1 {
+  color: white;
+  font-weight: normal;
+  padding-top: 90px;
+  text-align: center;
+}
+.about-first-container {
+  width: 80%;
+  display: flex;
+  margin: 50px auto;
+}
+.text {
+  width: 45%;
+  padding: 20px;
+}
+.text h2 {
+  font-weight: 500;
+}
+.text p {
+  font-size: 1.2rem;
+  margin: 40px 0;
+}
+.images-about-first {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; /* Bütün elementləri sağa itələyir */
+  align-items: center; /* Ortaya gətirir */
+}
+
+.img-about {
+  width: 49%;
+  justify-content: flex-end;
+}
+
+.img-about img {
+  height: 370px;
+  width: 100%;
+}
+
+/* Boz divləri sağa yerləşdirmək */
+.imgs-about {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column; /* Dikey düzülüş */
+  align-items: flex-end; /* Sağ hizalama */
+  gap: 35px; /* Şəkillər arasında boşluq */
+}
+
+.imgs-about img {
+  height: 165px;
+  width: auto; /* Şəkillərin enini avtomatik saxlayır */
+}
+
+.about-second {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center; /* X oxu üzrə ortada */
+}
+.small-div-about-second {
+  background-color: #110d57;
+  width: 90%;
+  height: 100px;
+}
+.about-second-container {
+  background-color: white;
+  box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%); /* X oxu üzrə tam ortada */
+  padding: 20px;
+}
+.about-second-container-text{
+  width: 75%;
+  margin: 30px auto;
+}
+.about-second-container-text p{
+  font-size: 1.1rem;
+  font-weight: 450;
+  font-family:sans-serif;
+  letter-spacing: 0%;
+}
+.about-second-container-text hr{
+  border: 1px solid #110d57;
+}
+.about-second-container-text h5{
+  margin: 20px 0;
+}
+.about-second-container-text ul li{
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+.footer{
+ padding-top: 100px;
+}

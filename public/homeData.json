@@ -1,0 +1,84 @@
+{
+    "hero": {
+      "title": "Fueling Change, Empowering Communities, Inspiring Innovation",
+      "description": "Together, we’re crafting solutions that address today’s challenges and build a stronger, more sustainable tomorrow.",
+      "buttonText": "See events",
+      "buttonLink": "/events",
+      "logo": "sdisLogo"
+    },
+    "goals": {
+      "title": "Goals",
+      "images": ["goal1", "goal2", "goal3"]
+    },
+    "about": {
+      "title": "Who We Are Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "description": "Together, we’re crafting solutions that address today’s challenges and build a stronger, more sustainable tomorrow.",
+      "buttonText": "See us",
+      "buttonLink": "/about",
+      "images": {
+        "large": "rec3",
+        "small": ["rec1", "rec2"]
+      }
+    },
+    "news": {
+      "title": "Breaking news",
+      "buttonText": "See All",
+      "buttonLink": "/news",
+      "featured": {
+        "image": "mount",
+        "title": "Materials: Baking soda, vinegar",
+        "subtitle": "Volcano Eruption",
+        "description": "Czech firefighters tackle large toxic train fire A train transporting benzene, a carcinogen, derailed and caught fire on Friday, prompting a large emergency response.",
+        "buttonText": "Read More",
+        "buttonLink": "/news"
+      },
+      "articles": [
+        {
+          "image": "newsH1",
+          "title": "Materials: Baking soda, vinegar",
+          "subtitle": "Volcano Eruption",
+          "description": "Czech firefighters tackle large toxic train fire A train transporting benzene, a carcinogen, derailed and caught fire on Friday, prompting a large emergency response.",
+          "time": "2 hrs ago",
+          "location": "Europe"
+        },
+        {
+          "image": "newsH2",
+          "title": "Materials: Baking soda, vinegar",
+          "subtitle": "Volcano Eruption",
+          "description": "Czech firefighters tackle large toxic train fire A train transporting benzene, a carcinogen, derailed and caught fire on Friday, prompting a large emergency response.",
+          "time": "2 hrs ago",
+          "location": "Europe"
+        },
+        {
+          "image": "newsH3",
+          "title": "Materials: Baking soda, vinegar",
+          "subtitle": "Volcano Eruption",
+          "description": "Czech firefighters tackle large toxic train fire A train transporting benzene, a carcinogen, derailed and caught fire on Friday, prompting a large emergency response.",
+          "time": "2 hrs ago",
+          "location": "Europe"
+        }
+      ]
+    },
+    "partners": {
+      "title": "Our Partners",
+      "logos": ["empty", "empty", "empty", "empty", "empty"]
+    },
+    "subscribe": {
+      "title": "Your feedback is valuable to us. Share your suggestions and comments!",
+      "subtitle": "Get updates directly in your inbox",
+      "formFields": [
+        {
+          "label": "Email",
+          "placeholder": "Enter your email",
+          "type": "email"
+        },
+        {
+          "label": "Name",
+          "placeholder": "Enter your name",
+          "type": "text"
+        }
+      ],
+      "buttonText": "Subscribe"
+    }
+  }
+  

@@ -1,0 +1,35 @@
+{
+    "title": "About Us",
+    "sections": [
+      {
+        "id": "about-first",
+        "heading": "Our vision",
+        "text": "We envision a world where sustainable economic systems fuel progress, empower communities, and protect the planet. By blending innovation with equity, we aim to inspire a new standard of development that benefits everyone.",
+        "images": [
+          "rec3",
+          "rec1",
+          "rec2"
+        ]
+      },
+      {
+        "id": "about-second",
+        "text": "At the Sustainable Economic Development and Innovation Platform, we are committed to fostering a future where progress and sustainability go hand in hand. Our mission is to create a space for bold ideas, open dialogue, and transformative solutions to address the unspoken challenges facing our world today.",
+        "highlights": [
+          {
+            "title": "Shine a Light on Overlooked Issues",
+            "description": "We uncover and amplify the often-unspoken problems that hinder sustainable growth and innovation."
+          },
+          {
+            "title": "Promote Collaborative Solutions",
+            "description": "By bringing together thought leaders, changemakers, and innovators from diverse fields, we co-create strategies that drive lasting impact."
+          },
+          {
+            "title": "Inspire Action",
+            "description": "Through thought-provoking discussions, insights, and case studies, we empower individuals and organizations to take meaningful steps toward a sustainable future."
+          }
+        ],
+        "whyExist": "The challenges of our time—climate change, social inequities, and economic disparities—require fresh perspectives and creative solutions. Our platform exists to catalyze these solutions, sparking a global conversation that redefines what’s possible in sustainable development and innovation. Join us in transforming challenges into opportunities. Together, we can build a more sustainable, equitable, and innovative world."
+      }
+    ]
+  }
+  

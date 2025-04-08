@@ -1,0 +1,70 @@
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* X oxu üzrə ortada */
+}
+.small-div {
+  background-color: #110d57;
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.contact-container {
+  background-color: white;
+  box-shadow: 4px 4px 20px rgb(0, 0, 0,0.3);
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  z-index: 1;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%); /* X oxu üzrə tam ortada */
+  padding: 20px;
+}
+.contact-container h1 {
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-cont {
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 40px;
+  justify-content: space-between;
+}
+.form-group {
+  width: 48%;
+  gap: 15px;
+  color: black !important;
+}
+.form-group input {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.follow-contact {
+  width: 49%;
+  padding: 30px 40px;
+}
+
+.submit-btn-contact {
+  width: 75%;
+  background-color: #110d57;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.submit-btn-contact:hover{
+    background-color: white;
+    color: #110d57;
+    font-weight: 650;
+}
+/* .footer{
+    margin-top: 130px;
+} */

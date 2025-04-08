@@ -1,0 +1,83 @@
+.news {
+  width: 100%;
+  min-height: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* X oxu üzrə ortada */
+}
+.small-div-news {
+  background-color: #110d57;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.small-div-news h2 {
+  margin: 100px 0;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+.news-container {
+  background-color: white;
+  box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  z-index: 1;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%); /* X oxu üzrə tam ortada */
+  padding: 40px 100px;
+}
+.news-materials-first {
+  display: flex;
+  justify-content: space-between;
+}
+.news-materials-first img {
+  width: 45%;
+  height: 200px;
+}
+.news-materials-text {
+  width: 48%;
+}
+.news-materials-text p{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.time-news{
+    display: flex;
+    gap: 30px;
+}
+.news-container-text{
+    margin: 20px 0;
+}
+.news-container-text ul li{
+    font-size: 1.125rem;
+    margin: 10px 0;
+}
+.news-container-text p{
+    margin: 50px 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    width: 90%;
+}
+.news-materials-second{
+    width: 50%;
+    background-color: aqua;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+.news-materials-second img{
+    width: 160px;
+    height: 140px;
+}
+.news-materials-text p{
+    font-size: 0.9rem;
+}
+.footer{
+    padding-top: 400px;
+}

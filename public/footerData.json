@@ -1,0 +1,18 @@
+{
+    "logo": "../../src/assets/images/sdisLogo.png",
+    "logoText": "Sustainable Development Science and Innovation",
+    "quickLinks": [
+      { "name": "Home", "path": "/" },
+      { "name": "About us", "path": "/about" },
+      { "name": "News", "path": "/news" },
+      { "name": "Events", "path": "/events" },
+      { "name": "Contact", "path": "/contact" }
+    ],
+    "membershipLinks": [
+      { "name": "Sign in", "path": "/signin" },
+      { "name": "Sign up", "path": "/signup" },
+      { "name": "Register", "path": "/register" },
+      { "name": "Reset password", "path": "/reset-password" }
+    ],
+    "copyright": "2025 SDIS. All Rights Reserved."
+  }

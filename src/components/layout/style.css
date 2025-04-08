@@ -1,0 +1,132 @@
+/* Navbar Container */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.layout-navbar {
+  display: flex;
+}
+
+/* Logo Image */
+.logo-img {
+  height: 60px;
+}
+
+/* Logo Text */
+.logo-text {
+  font-size: 14px;
+  font-weight: 650;
+  color: #110f42;
+  max-width: 120px;
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+
+/* Navigation Links */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #110f42;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #5d4fff;
+}
+
+/* Sign In Button */
+.nav-sign-btn {
+  background-color: #131c6d;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.nav-sign-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hide on navbar open - only on small screens */
+@media (max-width: 430px) {
+  .hide-on-toggle {
+    display: none !important;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  /* Navbar Toggler - solda */
+  .navbar-toggler {
+    order: 1;
+  }
+
+  /* Logo - ortada */
+  .logo {
+    order: 2;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  .logo-text {
+    font-size: 0.6rem;
+    max-width: 100px;
+    line-height: 1.2;
+  }
+
+  /* Sign In düyməsi - sağda */
+  .nav-sign-btn {
+    order: 3;
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 0;
+    border-radius: 7px;
+  }
+
+  .layout-navbar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
