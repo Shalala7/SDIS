@@ -52,3 +52,63 @@
     border-radius: 7px;
     width: 300px;
 }
+
+@media(max-width:430px){
+  .register {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-register {
+    background-color: #110d57;
+    width: 100%;
+    height: 180px;
+    position: relative;
+  }
+  .register-container {
+    background-color: #FAFAFA;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 20px 10px;
+  }
+  .register-container h1 {
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-register{
+      width: 100%;
+  }
+  .form-register .form-group{
+      width: 100%;
+  }
+  .form-register .form-group label{
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #110d57;
+  }
+  .form-register .form-group input{
+      margin:0;
+  }
+  .form-register a{
+      background-color: #110d57;
+      color: white;
+      border-radius: 7px;
+      width: 100%;
+  }
+  
+}

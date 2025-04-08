@@ -13,7 +13,7 @@ const News = () => {
         <div className="news-container">
           <div className="news-materials-first">
             <img src={mount} alt="" />
-            <div className="news-materials-text">
+            <div className="news-material-text">
               <h5>Materials: Baking soda, vinegar</h5>
               <h6>Volcano Eruption</h6>
               <p>

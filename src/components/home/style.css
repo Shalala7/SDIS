@@ -255,7 +255,7 @@
 .subscribe-home {
   width: 100%;
   margin: 100px auto;
-  min-height: 70vh;
+  min-height: 50vh;
   background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
 }
 .subscribe-home-container {
@@ -626,6 +626,7 @@
   }
   .form-home .btn {
     width: 360px;
+    margin-bottom: 10px;
     color: white;
     background-color: transparent;
     border: 1px solid white;
@@ -644,6 +645,9 @@
   .form-group {
     width: 45%;
     color: white !important;
+  }
+  .footer{
+    margin-top: 0px !important;
   }
 }
 

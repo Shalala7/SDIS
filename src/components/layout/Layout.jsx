@@ -31,7 +31,7 @@ const Layout = () => {
 
           {/* Sign In düyməsi - Sağda */}
           <button className={`btn nav-sign-btn ${isNavOpen ? "hide-on-toggle" : ""}`}>
-            <Link to="/signIn" className="text-light">
+            <Link to="/register" className="text-light">
               Sign in
             </Link>
           </button>

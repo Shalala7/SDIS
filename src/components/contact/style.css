@@ -12,7 +12,7 @@
   position: relative;
 }
 .contact-container {
-  background-color: white;
+  background-color: #fafafa;
   box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
   width: 75%;
   display: flex;
@@ -51,7 +51,18 @@
   width: 49%;
   padding: 30px 40px;
 }
+.media-contact {
+  width: 50%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between; /* ikonlar arasında bərabər məsafə */
+  align-items: center;
+}
 
+.media-contact img {
+  width: 30px !important;
+  height: 30px !important;
+}
 .submit-btn-contact {
   width: 75%;
   background-color: #110d57;
@@ -65,10 +76,9 @@
   color: #110d57;
   font-weight: 650;
 }
-/* .footer{
-    margin-top: 130px;
-} */
-
+.footer{
+  margin-top: 130px;
+}
 @media (max-width: 430px) {
   .contact {
     width: 100%;
@@ -84,9 +94,9 @@
     position: relative;
   }
   .contact-container {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
-    width:90%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
@@ -103,7 +113,7 @@
     font-size: 1.3rem;
     text-align: center;
   }
-  
+
   .form-cont {
     width: 100%;
     display: flex;
@@ -111,15 +121,15 @@
     padding: 15px;
     justify-content: space-between;
   }
-  .form-cont h4{
+  .form-cont h4 {
     font-size: 1.2rem;
     width: 100%;
   }
-  .form-cont p{
+  .form-cont p {
     font-size: 0.9rem;
     width: 100%;
   }
-  .form-cont label{
+  .form-cont label {
     color: black !important;
   }
   .form-group {
@@ -135,10 +145,21 @@
     width: 100%;
     padding: 20px;
   }
-  .follow-contact h4{
+  .media-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* ikonlar arasında bərabər məsafə */
+    align-items: center;
+  }
+
+  .media-contact img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .follow-contact h4 {
     font-family: 1.2rem;
   }
-  .follow-contact p{
+  .follow-contact p {
     font-size: 0.9rem;
     width: 100%;
   }
@@ -154,5 +175,115 @@
     background-color: white;
     color: #110d57;
     font-weight: 650;
+  }
+  .footer {
+    margin-top: 280px;
+  }
+}
+
+@media(max-width:375px){
+  .footer{
+    margin-top: 340px;
+  }
+}
+@media (max-width: 320px) {
+  .contact {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div {
+    background-color: #110d57;
+    width: 100%;
+    height: 150px;
+    position: relative;
+  }
+  .contact-container {
+    background-color: #fafafa;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 20px 0;
+  }
+  .contact-container h1 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .form-cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+  }
+  .form-cont h4 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .form-cont p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .form-cont label {
+    color: black !important;
+  }
+  .form-group {
+    width: 98%;
+    gap: 15px;
+    color: black !important;
+  }
+  .form-group input {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .follow-contact {
+    width: 100%;
+    padding: 20px;
+  }
+  .media-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* ikonlar arasında bərabər məsafə */
+    align-items: center;
+  }
+
+  .media-contact img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .follow-contact h4 {
+    font-family: 1.2rem;
+  }
+  .follow-contact p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .submit-btn-contact {
+    width: 100%;
+    background-color: #110d57;
+    color: white;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .submit-btn-contact:hover {
+    background-color: white;
+    color: #110d57;
+    font-weight: 650;
+  }
+  .footer {
+    margin-top: 280px;
   }
 }

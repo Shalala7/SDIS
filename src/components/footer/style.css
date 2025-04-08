@@ -102,3 +102,13 @@
     padding: 10px;
   }
 }
+
+@media(max-width:375px){
+  .media-footer{
+    margin-left: 10px;
+  }
+  .menu-footer{
+    margin-left: 10px;
+  }
+}
+
