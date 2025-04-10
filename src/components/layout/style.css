@@ -68,6 +68,79 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+  .hide-on-toggle {
+    display: none !important;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  /* Navbar Toggler - solda */
+  .navbar-toggler {
+    order: 1;
+  }
+
+  /* Logo - ortada */
+  .logo {
+    order: 2;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 30px;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  .logo-text {
+    font-size: 0.6rem;
+    max-width: 100px;
+    line-height: 1.2;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .navTogg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* Sign In düyməsi - sağda */
+  .nav-sign-btn {
+    order: 3;
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 0;
+    border-radius: 7px;
+  }
+
+  .layout-navbar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
 /* Hide on navbar open - only on small screens */
 @media (max-width: 430px) {
   .hide-on-toggle {
@@ -111,16 +184,15 @@
   .navbar {
     display: flex;
     flex-wrap: nowrap;
-    
   }
-  .navTogg{
+  .navTogg {
     display: flex;
     flex-wrap: wrap;
   }
   /* Sign In düyməsi - sağda */
   .nav-sign-btn {
     order: 3;
-    
+
     padding: 6px 10px;
     font-size: 12px;
     margin: 0;
