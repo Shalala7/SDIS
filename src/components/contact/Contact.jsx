@@ -70,7 +70,9 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      <div className="footer-contact">
+        <Footer />
+      </div>
     </>
   );
 };

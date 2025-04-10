@@ -11,7 +11,8 @@
 .logo {
   display: flex;
   align-items: center;
-  width: 20%;order: 1;
+  width: 20%;
+  order: 1;
 }
 .layout-navbar {
   display: flex;
@@ -92,7 +93,8 @@
     display: flex;
     align-items: center;
     flex: 1;
-    justify-content: center;
+    margin-left: 30px;
+    justify-content: space-between;
     text-align: center;
   }
 
@@ -106,10 +108,19 @@
     max-width: 100px;
     line-height: 1.2;
   }
-
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    
+  }
+  .navTogg{
+    display: flex;
+    flex-wrap: wrap;
+  }
   /* Sign In düyməsi - sağda */
   .nav-sign-btn {
     order: 3;
+    
     padding: 6px 10px;
     font-size: 12px;
     margin: 0;

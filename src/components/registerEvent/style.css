@@ -33,27 +33,54 @@
   align-items: center;
   justify-content: center;
 }
-.form-register{
-    width: 50%;
+.form-register {
+  width: 50%;
 }
-.form-register .form-group{
-    width: 90%;
+.form-register .form-group {
+  width: 90%;
 }
-.form-register .form-group label{
-    font-weight: 600;
-    color: #110d57;
+.form-register .form-group label {
+  font-weight: 600;
+  color: black;
 }
-.form-register .form-group input{
-    margin: 5px 0;
+.form-register .form-group input {
+  margin: 5px 0;
 }
-.form-register a{
-    background-color: #110d57;
-    color: white;
-    border-radius: 7px;
-    width: 300px;
+.form-register .submit-btn {
+  background-color: #110d57;
+  color: white;
+  border-radius: 7px;
+  width: 300px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-@media(max-width:430px){
+.modal {
+  width: 414px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.modal-image-only{
+  background-color: #110d57;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+@media (max-width: 430px) {
   .register {
     width: 100%;
     min-height: 50vh;
@@ -68,7 +95,7 @@
     position: relative;
   }
   .register-container {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
     width: 90%;
     display: flex;
@@ -90,25 +117,27 @@
     align-items: center;
     justify-content: center;
   }
-  .form-register{
-      width: 100%;
+  .form-register {
+    width: 100%;
   }
-  .form-register .form-group{
-      width: 100%;
+  .form-register .form-group {
+    width: 100%;
   }
-  .form-register .form-group label{
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: #110d57;
+  .form-register .form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: black;
   }
-  .form-register .form-group input{
-      margin:0;
+  .form-register .form-group input {
+    margin: 0;
   }
-  .form-register a{
-      background-color: #110d57;
-      color: white;
-      border-radius: 7px;
-      width: 100%;
+  .form-register a {
+    background-color: #110d57;
+    color: white;
+    border-radius: 7px;
+    width: 100%;
   }
-  
+  .footer{
+    padding-top: 30px;
+  }
 }

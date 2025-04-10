@@ -47,7 +47,9 @@ const About = () => {
           <div className="about-second-container-text">
             <p>{aboutData.sections[1].text}</p>
             <hr />
-            <h5><b>What we do:</b></h5>
+            <h5>
+              <b>What we do:</b>
+            </h5>
             <ul>
               {aboutData.sections[1].highlights.map((item, index) => (
                 <li key={index}>
@@ -56,12 +58,16 @@ const About = () => {
               ))}
             </ul>
             <br />
-            <h5><b>Why we Exist:</b></h5>
+            <h5>
+              <b>Why we Exist:</b>
+            </h5>
             <p>{aboutData.sections[1].whyExist}</p>
           </div>
         </div>
       </section>
-      <Footer />
+      <div className="footer-about">
+        <Footer />
+      </div>
     </>
   );
 };

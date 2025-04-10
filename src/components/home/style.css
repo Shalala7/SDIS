@@ -1,3 +1,4 @@
+
 .first-home {
   width: 100%;
   min-height: 100vh;
@@ -284,6 +285,7 @@
 .form-home .btn {
   width: 300px;
   color: white;
+  margin-bottom: 10px;
   background-color: transparent;
   border: 1px solid white;
   border-radius: 10px !important;
@@ -299,9 +301,9 @@
   width: 45%;
   color: white !important;
 }
-.footer {
+/* .footer {
   padding: 0 !important;
-}
+} */
 @media (max-width: 430px) {
   .first-home {
     min-height: auto;
@@ -646,9 +648,9 @@
     width: 45%;
     color: white !important;
   }
-  .footer{
+  /* .footer{
     margin-top: 0px !important;
-  }
+  } */
 }
 
 @media (max-width: 375px) {

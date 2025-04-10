@@ -1,3 +1,4 @@
+
 .about-first {
   width: 100%;
   min-height: 80vh;
@@ -64,7 +65,7 @@
 
 .about-second {
   width: 100%;
-  min-height: 100vh;
+  min-height: 145vh;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -108,9 +109,6 @@
 .about-second-container-text ul li {
   margin: 10px 0;
   font-size: 1.1rem;
-}
-.footer {
-  padding-top: 100px;
 }
 
 @media (max-width: 430px) {
@@ -228,16 +226,16 @@
     margin: 5px 0;
     font-size: 0.9rem;
   }
-  .footer {
+  /* .footer {
     padding-top: 100px;
-  }
+  } */
 }
 
 @media(max-width:320px){
   .about-first-container{
     margin: 5px auto;
   }
-  .footer{
+  /* .footer{
     margin-top: 150px !important;
-  }
+  } */
 }

@@ -90,7 +90,9 @@ const News = () => {
           </div>
         </div>
       </section>{" "}
-      <Footer />
+      <div className="footer-news">
+        <Footer />
+      </div>
     </>
   );
 };

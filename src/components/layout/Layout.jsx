@@ -8,7 +8,7 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      <nav className="navbar navbar-expand-lg bg-white shadow-sm fixed-top py-2">
+     <nav className={`navbar navbar-expand-lg bg-white shadow-sm fixed-top py-2 ${isNavOpen ? "navTogg" : ""}`}>
         <div className="container-fluid align-items-center px-3">
           {/* Navbar Toggler - Solda */}
           <button
@@ -29,13 +29,15 @@ const Layout = () => {
             </NavLink>
           </div>
 
-          {/* Sign In düyməsi - Sağda */}
-          <button className={`btn nav-sign-btn ${isNavOpen ? "hide-on-toggle" : ""}`}>
-            <Link to="/register" className="text-light">
-              Sign in
-            </Link>
-          </button>
+        
         </div>
+        <button
+          className={`btn nav-sign-btn ${isNavOpen ? "hide-on-toggle" : ""}`}
+        >
+          <Link to="/login" className="text-light">
+            Sign in
+          </Link>
+        </button>
 
         {/* Navbar Links */}
         <div className="layout-navbar">

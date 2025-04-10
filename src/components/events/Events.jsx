@@ -21,47 +21,49 @@ const Events = () => {
             <img src={pic1} alt="pic1" />
             <div className="text-event">
               <p>20 February 2025</p>
-              <NavLink to="/register">Join Us</NavLink>
+              <NavLink to="/registerEvent">Join Us</NavLink>
             </div>
           </div>
           <div className="img-event">
             <img src={pic2} alt="pic2" />
             <div className="text-event">
               <p>20 February 2025</p>
-              <NavLink to="/register">Join Us</NavLink>
+              <NavLink to="/registerEvent">Join Us</NavLink>
             </div>
           </div>
           <div className="img-event">
             <img src={pic3} alt="pic3" />
             <div className="text-event">
               <p>20 February 2025</p>
-              <NavLink to="/register">Join Us</NavLink>
+              <NavLink to="/registerEvent">Join Us</NavLink>
             </div>
           </div>
           <div className="img-event">
             <img src={pic4} alt="pic4" />
             <div className="text-event">
               <p>20 February 2025</p>
-              <NavLink to="/register">Join Us</NavLink>
+              <NavLink to="/registerEvent">Join Us</NavLink>
             </div>
           </div>
           <div className="img-event">
             <img src={pic5} alt="pic5" />
             <div className="text-event">
               <p>20 February 2025</p>
-              <NavLink to="/register">Join Us</NavLink>
+              <NavLink to="/registerEvent">Join Us</NavLink>
             </div>
           </div>
           <div className="img-event">
             <img src={pic6} alt="pic6" />
             <div className="text-event">
               <p>20 February 2025</p>
-              <NavLink to="/register">Join Us</NavLink>
+              <NavLink to="/registerEvent">Join Us</NavLink>
             </div>
           </div>
         </div>
       </section>
-      <Footer />
+      <div className="footer-events">
+        <Footer />
+      </div>
     </>
   );
 };
