@@ -301,7 +301,7 @@
 
   .about-second {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -347,7 +347,7 @@
     font-size: 0.9rem;
   }
   .footer-about{
-    padding-top: 460px;
+    margin-top: 30px;
   }
 }
 

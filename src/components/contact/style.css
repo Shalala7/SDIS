@@ -176,7 +176,7 @@
 @media (min-width: 376px) and (max-width: 430px) {
   .contact {
     width: 100%;
-    min-height: 130vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
@@ -271,7 +271,7 @@
     font-weight: 650;
   }
   .footer-contact {
-    margin-top: 460px;
+    margin-top: 50px;
   }
 }
 
