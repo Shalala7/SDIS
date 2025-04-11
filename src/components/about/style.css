@@ -231,7 +231,7 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (min-width: 376px) and (max-width: 430px){
   .about-first {
     width: 100%;
     min-height: 50vh;
@@ -346,12 +346,14 @@
     margin: 5px 0;
     font-size: 0.9rem;
   }
-  /* .footer {
-    padding-top: 100px;
-  } */
+  .footer-about{
+    padding-top: 460px;
+  }
 }
 
-@media (max-width: 375px) {
+
+
+@media (min-width: 321px) and (max-width: 375px) {
   .about-first {
     width: 100%;
     min-height: 50vh;
@@ -469,7 +471,7 @@
     font-size: 0.8rem;
   }
   .footer-about {
-    padding-top: 270px;
+    padding-top: 325px;
   }
 }
 

@@ -173,10 +173,10 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (min-width: 376px) and (max-width: 430px) {
   .contact {
     width: 100%;
-    min-height: 100vh;
+    min-height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
@@ -271,14 +271,14 @@
     font-weight: 650;
   }
   .footer-contact {
-    margin-top: 300px;
+    margin-top: 460px;
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 321px) and (max-width: 375px) {
   .contact {
     width: 100%;
-    min-height: 100vh;
+    min-height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
@@ -383,14 +383,14 @@
     font-weight: 650;
   }
   .footer-contact {
-    padding-top: 350px;
+    margin-top: 300px;
   }
 }
 
 @media (max-width: 320px) {
   .contact {
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */

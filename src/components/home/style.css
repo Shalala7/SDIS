@@ -1042,7 +1042,7 @@
   .subscribe-home {
     margin: 20px 0;
   }
-  .form-home .form-group { 
+  .form-home .form-group {
     width: 85%;
     color: white !important;
   }
@@ -1058,6 +1058,43 @@
   }
   .subscribe-btn-home {
     margin: 10px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 332px) {
+  .third-home {
+    min-height: 90vh;
+  }
+  .materials img {
+    height: 200px;
+  }
+  .form-home .btn{
+    width: 250px;
+  }
+  .second-home {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .second-home-container {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .second-home-container h4 {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .second-home-imgs {
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second-home-imgs img {
+    width: 130px;
+    margin: 0 auto;
   }
 }
 
@@ -1115,7 +1152,7 @@
     min-height: 50vh;
   }
   .second-home-container {
-    width:95%;
+    width: 95%;
     margin: 20px auto;
   }
   .second-home-container h4 {
@@ -1324,7 +1361,6 @@
   }
   .time-country {
     display: none;
-    
   }
   .fifth-home {
     width: 100%;
