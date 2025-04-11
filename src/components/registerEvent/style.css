@@ -74,10 +74,99 @@
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
-.modal-image-only{
+.modal-image-only {
   background-color: #110d57;
   border-radius: 15px;
   padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .register {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-register {
+    background-color: #110d57;
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  .register-container {
+    background-color: white;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 40px;
+  }
+  .register-container h1 {
+    width: 100%;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-register {
+    margin: 20px auto;
+    width: 80%;
+  }
+  .form-register .form-group {
+    width: 80%;
+  }
+  .form-register .form-group label {
+    font-weight: 600;
+    color: black;
+  }
+  .form-register .form-group input {
+    margin: 5px 0;
+  }
+  .form-register .submit-btn {
+    background-color: #110d57;
+    color: white;
+    border-radius: 7px;
+    width: 390px;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal {
+    width: 414px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  .modal-image-only {
+    background-color: #110d57;
+    border-radius: 15px;
+    padding: 30px;
+  }
+  .register-event-footer{
+    padding-top: 200px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -131,13 +220,134 @@
   .form-register .form-group input {
     margin: 0;
   }
-  .form-register a {
+  .form-register .submit-btn {
     background-color: #110d57;
     color: white;
+
+    padding: 2px 0;
     border-radius: 7px;
-    width: 100%;
+    width: 95%;
   }
-  .footer{
-    padding-top: 30px;
+  .modal-overlay {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  .modal-image-only {
+    width: 350px !important;
+    height: 300px !important;
+    background-color: #110d57;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .register-event-footer {
+    padding-top: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+  .register {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-register {
+    background-color: #110d57;
+    width: 100%;
+    height: 150px;
+    position: relative;
+  }
+  .register-container {
+    background-color: #fafafa;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 20px 10px;
+  }
+  .register-container h1 {
+    width: 100%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-register {
+    width: 100%;
+    padding: 10px;
+  }
+  .form-register .form-group {
+    width: 90%;
+  }
+  .form-register .form-group label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: black;
+  }
+  .form-register .form-group input {
+    margin: 0;
+  }
+  .form-register .submit-btn {
+    background-color: #110d57;
+    color: white;
+
+    padding: 2px 0;
+    border-radius: 7px;
+    width: 90%;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  .modal-image-only {
+    width: 350px !important;
+    height: 300px !important;
+    background-color: #110d57;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .register-event-footer {
+    padding-top: 250px;
   }
 }

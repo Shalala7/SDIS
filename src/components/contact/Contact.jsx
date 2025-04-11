@@ -66,7 +66,7 @@ const Contact = () => {
               <img src={linkedin} alt="linkedin" />
               <img src={insta} alt="insta" />
             </div>
-            <img src={map} alt="map" width={320} height={270} />
+            <img className="map-img" src={map} alt="map" />
           </div>
         </div>
       </section>

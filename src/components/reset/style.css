@@ -56,6 +56,67 @@ span {
   color: white;
 }
 
+@media(max-width:768px){
+  .reset {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #101047;
+  }
+  .reset-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .reset-container img {
+    width: 120px;
+  }
+  .reset-container h5 {
+    color: white;
+    width: 28%;
+    margin: 0 auto;
+  }
+  .form-reset {
+    margin: 20px 0;
+    width: 100%;
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+  }
+  .form-reset h4 {
+    color: #101047;
+  }
+  .form-reset .form-group {
+    width: 100%;
+  }
+  .form-group input {
+    background-color: #f5f6f7;
+    border-radius: 10px;
+  }
+  .reset-password-btn {
+    background-color: #101047;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    margin: 10px 0;
+    transition-duration: 0.3s;
+  }
+  .reset-password-btn:hover {
+    color: white;
+  }
+  .return-to-login {
+    color: gray;
+    transition-duration: 0.3s;
+  }
+  .return-to-login:hover {
+    color: gray;
+  }
+  span {
+    color: white;
+  }
+  
+}
+
 @media (max-width: 430px) {
   .reset {
     width: 100%;

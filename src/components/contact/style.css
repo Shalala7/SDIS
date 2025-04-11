@@ -58,7 +58,10 @@
   justify-content: space-between; /* ikonlar arasında bərabər məsafə */
   align-items: center;
 }
-
+.map-img {
+  width: 320px;
+  height: 270px;
+}
 .media-contact img {
   width: 30px !important;
   height: 30px !important;
@@ -76,9 +79,100 @@
   color: #110d57;
   font-weight: 650;
 }
-/* .footer{
-  margin-top: 130px;
-} */
+
+@media (max-width: 768px) {
+  .contact {
+    width: 100%;
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div {
+    background-color: #110d57;
+    width: 100%;
+    height: 160px;
+    position: relative;
+  }
+  .contact-container {
+    background-color: #fafafa;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 30px 20px;
+  }
+  .contact-container h1 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .form-cont {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .form-cont h4{
+    font-size: 1.3rem;
+  }
+  .form-group {
+    width: 100%;
+    gap: 10px;
+    color: black !important;
+  }
+  .form-group input {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .follow-contact {
+    width: 49%;
+    padding: 20px;
+  }
+  .media-contact {
+    width: 60%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between; /* ikonlar arasında bərabər məsafə */
+    align-items: center;
+  }
+  .map-img {
+    width: 300px;
+    height: 250px;
+    margin: 30px 0;
+  }
+  .media-contact img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .submit-btn-contact {
+    width: 100%;
+    background-color: #110d57;
+    color: white;
+    padding:5px 0;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .submit-btn-contact:hover {
+    background-color: white;
+    color: #110d57;
+    font-weight: 650;
+  }
+  .footer-contact{
+    padding-top: 230px;
+  }
+}
+
 @media (max-width: 430px) {
   .contact {
     width: 100%;
@@ -181,11 +275,118 @@
   }
 }
 
-@media(max-width:375px){
-  .footer-contact{
-    margin-top: 340px;
+@media (max-width: 375px) {
+  .contact {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div {
+    background-color: #110d57;
+    width: 100%;
+    height: 140px;
+    position: relative;
+  }
+  .contact-container {
+    background-color: #fafafa;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 20px 0;
+  }
+  .contact-container h1 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .form-cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+  }
+  .form-cont h4 {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .form-cont p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .form-cont label {
+    color: black !important;
+  }
+  .form-group {
+    width: 90%;
+    gap: 10px;
+    color: black !important;
+  }
+  .form-group label {
+    font-size: 0.9rem;
+  }
+  .form-group input {
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 5px;
+  }
+  .follow-contact {
+    width: 100%;
+    padding: 20px;
+  }
+  .media-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* ikonlar arasında bərabər məsafə */
+    align-items: center;
+  }
+  .map-img {
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+  }
+  .media-contact img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .follow-contact h4 {
+    font-family: 1.1rem;
+  }
+  .follow-contact p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .submit-btn-contact {
+    width: 100%;
+    background-color: #110d57;
+    color: white;
+    border-radius: 8px;
+    padding: 5px 0;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .submit-btn-contact:hover {
+    background-color: white;
+    color: #110d57;
+    font-weight: 650;
+  }
+  .footer-contact {
+    padding-top: 350px;
   }
 }
+
 @media (max-width: 320px) {
   .contact {
     width: 100%;
@@ -197,7 +398,7 @@
   .small-div {
     background-color: #110d57;
     width: 100%;
-    height: 150px;
+    height: 130px;
     position: relative;
   }
   .contact-container {
@@ -209,7 +410,7 @@
     border-radius: 20px;
     z-index: 1;
     position: absolute;
-    top: 110px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%); /* X oxu üzrə tam ortada */
     padding: 20px 0;
@@ -225,23 +426,23 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 10px;
     justify-content: space-between;
   }
   .form-cont h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 100%;
   }
   .form-cont p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
   }
   .form-cont label {
     color: black !important;
   }
   .form-group {
-    width: 98%;
-    gap: 15px;
+    width: 90%;
+    gap: 10px;
     color: black !important;
   }
   .form-group input {
@@ -255,25 +456,30 @@
   .media-contact {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* ikonlar arasında bərabər məsafə */
+    justify-content: space-around; /* ikonlar arasında bərabər məsafə */
     align-items: center;
   }
-
+  .map-img {
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+  }
   .media-contact img {
-    width: 30px !important;
-    height: 30px !important;
+    width: 25px !important;
+    height: 25px !important;
   }
   .follow-contact h4 {
-    font-family: 1.2rem;
+    font-size: 1.1rem;
   }
   .follow-contact p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
   }
   .submit-btn-contact {
-    width: 100%;
+    width: 95%;
     background-color: #110d57;
     color: white;
+    padding: 0 5px;
     border-radius: 8px;
     transition-duration: 0.3s;
     cursor: pointer;
@@ -283,7 +489,7 @@
     color: #110d57;
     font-weight: 650;
   }
-  /* .footer {
-    margin-top: 280px;
-  } */
+  .footer-contact {
+    padding-top: 250px;
+  }
 }

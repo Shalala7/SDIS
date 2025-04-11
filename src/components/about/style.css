@@ -1,4 +1,3 @@
-
 .about-first {
   width: 100%;
   min-height: 80vh;
@@ -111,6 +110,127 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 768px) {
+  .about-first {
+    width: 100%;
+    min-height: 80vh;
+  }
+  .small-div-about-first {
+    width: 100%;
+    background-color: #110d57;
+    height: 140px;
+  }
+  .small-div-about-first h1 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: normal;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .about-first-container {
+    width: 90%;
+    display: flex;
+    margin: 30px auto;
+  }
+  .text {
+    width: 50%;
+    padding: 20px;
+  }
+  .text h2 {
+    font-size: 1.5rem;
+    
+    font-weight: 500;
+  }
+  .text p {
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+  .images-about-first {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; /* Bütün elementləri sağa itələyir */
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .img-about {
+    width: 49%;
+    justify-content: flex-end;
+  }
+
+  .img-about img {
+    height: 280px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .imgs-about {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column; /* Dikey düzülüş */
+    align-items: flex-end; /* Sağ hizalama */
+    gap: 35px; /* Şəkillər arasında boşluq */
+  }
+
+  .imgs-about img {
+    height: 120px;
+    width: 120px; /* Şəkillərin enini avtomatik saxlayır */
+  }
+
+  .about-second {
+    width: 100%;
+    min-height: 145vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-about-second {
+    background-color: #110d57;
+    width: 100%;
+    height: 80px;
+  }
+  .about-second-container {
+    background-color: white;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 20px;
+  }
+  .about-second-container-text {
+    width: 85%;
+    margin: 30px auto;
+  }
+  .about-second-container-text p {
+    font-size: 1rem;
+    font-weight: 450;
+    font-family: sans-serif;
+    letter-spacing: 0%;
+  }
+  .about-second-container-text hr {
+    border: 1px solid #110d57;
+  }
+  .about-second-container-text h5 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  .about-second-container-text ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  .footer-about{
+    padding-top: 200px;
+  }
+}
+
 @media (max-width: 430px) {
   .about-first {
     width: 100%;
@@ -129,7 +249,7 @@
     text-align: center;
   }
   .about-first-container {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto;
@@ -193,7 +313,7 @@
     height: 70px;
   }
   .about-second-container {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
     width: 90%;
     display: flex;
@@ -220,7 +340,7 @@
     border: 1px solid #110d57;
   }
   .about-second-container-text h5 {
-    margin:  0;
+    margin: 0;
   }
   .about-second-container-text ul li {
     margin: 5px 0;
@@ -231,11 +351,246 @@
   } */
 }
 
-@media(max-width:320px){
-  .about-first-container{
-    margin: 5px auto;
+@media (max-width: 375px) {
+  .about-first {
+    width: 100%;
+    min-height: 50vh;
   }
-  /* .footer{
-    margin-top: 150px !important;
-  } */
+  .small-div-about-first {
+    width: 100%;
+    background-color: #110d57;
+    height: 120px;
+  }
+  .small-div-about-first h1 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding-top: 90px;
+    text-align: center;
+  }
+  .about-first-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+  }
+  .text {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .text h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .text p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  .images-about-first {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .img-about {
+    width: 49%;
+  }
+
+  .img-about img {
+    height: 200px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .imgs-about {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Dikey düzülüş */
+    justify-content: center;
+    gap: 10px; /* Şəkillər arasında boşluq */
+  }
+
+  .imgs-about img {
+    height: 90px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+
+  .about-second {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    margin: 20px 0;
+    position: relative;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-about-second {
+    background-color: #110d57;
+    width: 100%;
+    height: 50px;
+  }
+  .about-second-container {
+    background-color: #fafafa;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 10px;
+  }
+  .about-second-container-text {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .about-second-container-text p {
+    font-size: 0.8rem;
+    font-weight: 450;
+    font-family: sans-serif;
+    letter-spacing: 0%;
+  }
+  .about-second-container-text hr {
+    border: 1px solid #110d57;
+  }
+  .about-second-container-text h5 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .about-second-container-text ul li {
+    margin: 5px 0;
+    font-size: 0.8rem;
+  }
+  .footer-about {
+    padding-top: 270px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-first {
+    width: 100%;
+    min-height: 55vh;
+  }
+  .small-div-about-first {
+    width: 100%;
+    background-color: #110d57;
+    height: 110px;
+  }
+  .small-div-about-first h1 {
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-top: 80px;
+    text-align: center;
+  }
+  .about-first-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+  }
+  .text {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .text h2 {
+    font-size: 1.12rem;
+    font-weight: 600;
+  }
+  .text p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  .images-about-first {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .img-about {
+    width: 49%;
+  }
+
+  .img-about img {
+    height: 180px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .imgs-about {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Dikey düzülüş */
+    justify-content: center;
+    gap: 5px; /* Şəkillər arasında boşluq */
+  }
+
+  .imgs-about img {
+    height: 86px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+
+  .about-second {
+    width: 100%;
+    margin: 20px 0;
+    min-height: 110vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-about-second {
+    background-color: #110d57;
+    width: 100%;
+    height: 50px;
+  }
+  .about-second-container {
+    background-color: #fafafa;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+    padding: 10px;
+  }
+  .about-second-container-text {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .about-second-container-text p {
+    font-size: 0.8rem;
+    font-weight: 450;
+    font-family: sans-serif;
+    letter-spacing: 0%;
+  }
+  .about-second-container-text hr {
+    border: 1px solid #110d57;
+  }
+  .about-second-container-text h5 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .about-second-container-text ul li {
+    margin: 5px 0;
+    font-size: 0.8rem;
+  }
+  .footer-about {
+    padding-top: 280px;
+  }
 }

@@ -215,3 +215,82 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 320px) {
+  .hide-on-toggle {
+    display: none !important;
+  }
+  .layout{
+    max-width:100%;
+  }
+  .container-fluid {
+    display: flex;
+    max-width:100%;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  /* Navbar Toggler - solda */
+  .navbar-toggler {
+    order: 1;
+  }
+
+  /* Logo - ortada */
+  .logo {
+    order: 2;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 10%;
+    margin-left: 0px;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .logo-img {
+    height: 40px;
+    margin-right: 5px;
+  }
+
+  .logo-text {
+    font-size: 0.6rem;
+    max-width: 100px;
+    
+    line-height: 1;
+  }
+  .navbar {
+    padding: 5px  !important;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .navTogg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* Sign In düyməsi - sağda */
+  .nav-sign-btn {
+    order: 3;
+
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 0;
+    border-radius: 7px;
+  }
+
+  .layout-navbar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}

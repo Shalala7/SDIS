@@ -50,7 +50,9 @@ const RegisterEvent = () => {
                 required
               />
             </div>
-            <button type="submit" className="btn submit-btn">Submit</button>
+            <button type="submit" className="btn submit-btn">
+              Submit
+            </button>
           </form>
         </div>
       </section>
@@ -62,8 +64,9 @@ const RegisterEvent = () => {
           </div>
         </div>
       )}
-
-      <Footer />
+      <div className="register-event-footer">
+        <Footer />
+      </div>
     </>
   );
 };

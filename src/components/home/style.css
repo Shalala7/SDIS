@@ -1042,7 +1042,7 @@
   .subscribe-home {
     margin: 20px 0;
   }
-  .form-home .form-group {
+  .form-home .form-group { 
     width: 85%;
     color: white !important;
   }
@@ -1059,4 +1059,355 @@
   .subscribe-btn-home {
     margin: 10px;
   }
+}
+
+@media (max-width: 320px) {
+  .first-home {
+    min-height: auto;
+    padding: 50px 0;
+  }
+
+  .first-home-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    min-height: 60vh;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .first-text-home {
+    width: 100%;
+  }
+
+  .first-text-home h1 {
+    font-size: 1.1rem;
+  }
+
+  .first-text-home p {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .home-events-btn {
+    width: 90%;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .first-img-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .first-img-home img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  .second-home {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .second-home-container {
+    width:95%;
+    margin: 20px auto;
+  }
+  .second-home-container h4 {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .second-home-imgs {
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second-home-imgs img {
+    width: 130px;
+    margin: 0 auto;
+  }
+  .third-home {
+    width: 100%;
+    margin: 0 !important;
+    min-height: 105vh;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+
+  .third-home-container {
+    width: 99%;
+    margin: 0 auto;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .third-home-text {
+    width: 100%;
+    margin: 0 !important;
+    order: 1;
+  }
+
+  .third-home-text h1 {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .third-home-text p {
+    font-size: 0.9rem;
+    color: white;
+    margin: 5px 0;
+  }
+
+  .home-see-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 90%;
+    order: 3;
+    padding: 0px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-align: center;
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  .home-see-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+
+  /* Qara div və içindəki elementlər */
+  .third-home-images {
+    width: 100%;
+    height: auto;
+    order: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .third-home-img {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .third-home-img img {
+    height: 180px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .third-home-imgs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Dikey düzülüş */
+    align-items: center; /* Sağ hizalama */
+    gap: 10px; /* Şəkillər arasında boşluq */
+  }
+
+  .third-home-imgs img {
+    height: 90px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+  .fourth-home {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .fourth-home-container {
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fourth-heading-home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fourth-heading-home h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .fourth-heading-home a {
+    color: rgb(139, 139, 139);
+    font-weight: 600;
+    font-size: 0.7rem;
+    width: 60px;
+    height: 25px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+  }
+  .fourth-left-home {
+    width: 100%;
+  }
+  .fourth-left-home img {
+    width: 100%;
+    height: 200px;
+  }
+  .fourth-left-home h5 {
+    margin-top: 15px;
+  }
+  .fourth-left-home h6 {
+    font-weight: 600;
+  }
+  .fourth-left-home p {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+  .fourth-left-home a {
+    background-color: #110d57;
+    color: white;
+    width: 280px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    padding: 3px 0;
+  }
+  .fourth-right-home {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column; /* Div-ləri dikey yerləşdirmək üçün */
+    justify-content: space-between; /* İlk div yuxarıda, ikinci div ortada, üçüncü div aşağıda */
+    /* Yuxarı və aşağı aralıq vermək */
+  }
+  .materials {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch; /* img və text eyni hündürlükdə olsun */
+    width: 100%;
+    background-color: #f9f9f9; /* istəyə görə, sınaq üçün */
+    border-radius: 8px;
+  }
+
+  .materials img {
+    width: 170px;
+    height: 180px; /* Hündürlük stretch ilə uyğunlaşacaq */
+    object-fit: cover; /* şəkil boşluğa uyğun uzansın, kəsilmə olmadan */
+    border-radius: 6px;
+  }
+
+  .materials-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* yazılar yuxarı-aşağı paylansın */
+  }
+
+  .materials-text h5 {
+    font-size: 0.9rem;
+  }
+  .materials-text h6 {
+    display: none;
+  }
+  .materials-text p {
+    font-size: 0.7rem;
+    width: 100%;
+    margin: 0;
+  }
+  .time-country {
+    display: none;
+    
+  }
+  .fifth-home {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 60vh;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .fifth-home h2 {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .fifth-home-container {
+    width: 90%;
+    gap: 10px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .fifth-home-container img {
+    width: 90px;
+    height: 100px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .subscribe-home {
+    width: 100%;
+    margin: 30px auto;
+    min-height: 35vh;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .subscribe-home-container {
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 15px;
+  }
+  .subscribe-text-home {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+  .subscribe-text-home h4 {
+    font-size: 1.1rem;
+  }
+  .subscribe-text-home p {
+    margin: 5px 0;
+  }
+  .form-home {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .form-home .btn {
+    width: 250px;
+    margin-bottom: 15px;
+    color: white;
+    padding: 5px !important;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px !important;
+    transition-duration: 0.3s;
+    font-weight: 600;
+  }
+  .form-home .btn:hover {
+    background-color: white;
+    color: #110d57;
+    font-weight: 600;
+  }
+  .form-home .form-group label {
+    color: white;
+  }
+  .form-home .form-group {
+    width: 90%;
+    padding: 0 !important;
+    color: white !important;
+  }
+  /* .footer{
+    margin-top: 0px !important;
+  } */
 }

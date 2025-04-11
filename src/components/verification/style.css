@@ -27,6 +27,37 @@
   text-align: center;
 }
 
+@media(max-width:768px){
+  .verification {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #101047;
+  }
+  .verification-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .logo-verification {
+    width: 120px;
+  }
+  .verification-img{
+      width: 350px;
+  }
+  .verification-container h4 {
+    color: white;
+    width: 60%;
+    margin: 10px auto;
+    font-size: 1.35rem;
+  }
+  .alt-note{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 @media(max-width:430px){
   .verification {
     width: 100%;
