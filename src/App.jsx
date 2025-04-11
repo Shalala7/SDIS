@@ -7,10 +7,10 @@ import Events from "./components/events/Events";
 import About from "./components/about/About";
 import News from "./components/news/News";
 import RegisterEvent from "./components/registerEvent/RegisterEvent";
-import RegisterSite from "./components/registerSite/RegisterSite";
 import Login from "./components/login/Login";
 import Verification from "./components/verification/Verification";
 import Reset from "./components/reset/Reset";
+import RegisterSite from "./components/registerSite/registerSite";
 
 const Main = () => {
   const location = useLocation();
