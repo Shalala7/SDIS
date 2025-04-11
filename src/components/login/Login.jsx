@@ -10,7 +10,9 @@ const Login = () => {
     <>
       <section className="login">
         <div className="login-container">
-          <img src={sdisLogo} alt="logo" />
+          <NavLink to="/home">
+            <img src={sdisLogo} alt="logo" />
+          </NavLink>
           <h5>Sustinable Development Science and Innovation</h5>
           <div className="form-login">
             <h5>Log in</h5>
@@ -45,7 +47,7 @@ const Login = () => {
               </NavLink>
             </div>
           </div>
-         <span>© 2025 SDSI. All Rights Reserved.</span>
+          <span>© 2025 SDSI. All Rights Reserved.</span>
         </div>
       </section>
     </>

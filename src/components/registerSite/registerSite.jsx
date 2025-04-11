@@ -10,7 +10,9 @@ const RegisterSite = () => {
     <>
       <section className="register-site">
         <div className="register-site-container">
-          <img src={sdisLogo} alt="logo" />
+          <NavLink to="/home">
+            <img src={sdisLogo} alt="logo" />
+          </NavLink>
           <h5>Sustinable Development Science and Innovation</h5>
           <div className="form-register-site">
             <h5>Register</h5>
@@ -43,7 +45,9 @@ const RegisterSite = () => {
               </label>
             </div>
 
-            <NavLink to="/verification" className="btn sign-btn-register-site">Sign up</NavLink>
+            <NavLink to="/verification" className="btn sign-btn-register-site">
+              Sign up
+            </NavLink>
             <img src={hr} alt="hr" />
             <div className="media-register-site">
               <img src={google} alt="" />
