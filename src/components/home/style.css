@@ -1175,7 +1175,7 @@
   .third-home {
     width: 100%;
     margin: 0 !important;
-    min-height: 105vh;
+    min-height: 110vh;
     background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
     display: grid;
     place-items: center;
@@ -1185,6 +1185,7 @@
     width: 99%;
     margin: 0 auto;
     padding-top: 0;
+    margin-bottom: 20px !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
