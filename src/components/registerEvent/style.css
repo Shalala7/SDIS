@@ -348,6 +348,7 @@
     padding: 10px;
   }
   .register-event-footer {
+    position: relative;
     padding-top: 250px;
   }
 }

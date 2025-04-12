@@ -176,7 +176,7 @@
 @media (min-width: 376px) and (max-width: 430px) {
   .contact {
     width: 100%;
-    min-height: 110vh;
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
@@ -271,14 +271,15 @@
     font-weight: 650;
   }
   .footer-contact {
-    margin-top: 100px;
+    position: relative;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
   .contact {
     width: 100%;
-    min-height: 150vh;
+    min-height: 180vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
@@ -383,14 +384,15 @@
     font-weight: 650;
   }
   .footer-contact {
-    margin-top: 350px;
+    position: relative;
+    margin-top: 150px;
   }
 }
 
 @media (max-width: 320px) {
   .contact {
     width: 100%;
-    min-height: 200vh;
+    min-height: 230vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
@@ -490,6 +492,7 @@
     font-weight: 650;
   }
   .footer-contact {
-    padding-top: 250px;
+    position: relative;
+    padding-top: 80px;
   }
 }
