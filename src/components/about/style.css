@@ -74,8 +74,12 @@
   background-color: #110d57;
   width: 90%;
   height: 100px;
+  position: relative;
+  bottom: -30px;
+  z-index: -9;
 }
 .about-second-container {
+  margin: 0 auto;
   background-color: white;
   box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
   width: 70%;
@@ -83,10 +87,10 @@
   flex-wrap: wrap;
   border-radius: 30px;
   z-index: 1;
-  position: absolute;
+  /* position: absolute;
   top: 60px;
   left: 50%;
-  transform: translateX(-50%); /* X oxu üzrə tam ortada */
+  transform: translateX(-50%);  */
   padding: 20px;
 }
 .about-second-container-text {
@@ -138,7 +142,7 @@
   }
   .text h2 {
     font-size: 1.5rem;
-    
+
     font-weight: 500;
   }
   .text p {
@@ -190,6 +194,9 @@
     background-color: #110d57;
     width: 100%;
     height: 80px;
+    position: relative;
+    bottom: -30px;
+    z-index: -9;
   }
   .about-second-container {
     background-color: white;
@@ -199,10 +206,6 @@
     flex-wrap: wrap;
     border-radius: 15px;
     z-index: 1;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
     padding: 20px;
   }
   .about-second-container-text {
@@ -226,12 +229,12 @@
     margin: 10px 0;
     font-size: 1rem;
   }
-  .footer-about{
+  .footer-about {
     padding-top: 200px;
   }
 }
 
-@media (min-width: 376px) and (max-width: 430px){
+@media (min-width: 376px) and (max-width: 430px) {
   .about-first {
     width: 100%;
     min-height: 50vh;
@@ -304,6 +307,7 @@
     min-height: 80vh;
     display: flex;
     position: relative;
+
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
   }
@@ -311,6 +315,9 @@
     background-color: #110d57;
     width: 100%;
     height: 70px;
+    position: relative;
+    bottom: -40px;
+    z-index: -9;
   }
   .about-second-container {
     background-color: #fafafa;
@@ -320,10 +327,7 @@
     flex-wrap: wrap;
     border-radius: 20px;
     z-index: 1;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+
     padding: 10px;
   }
   .about-second-container-text {
@@ -346,12 +350,10 @@
     margin: 5px 0;
     font-size: 0.9rem;
   }
-  .footer-about{
-    margin-top: 30px;
+  .footer-about {
+    padding-top: 50px;
   }
 }
-
-
 
 @media (min-width: 321px) and (max-width: 375px) {
   .about-first {
@@ -433,6 +435,9 @@
   .small-div-about-second {
     background-color: #110d57;
     width: 100%;
+    position: relative;
+    bottom: -30px;
+    z-index: -9;
     height: 50px;
   }
   .about-second-container {
@@ -443,10 +448,7 @@
     flex-wrap: wrap;
     border-radius: 10px;
     z-index: 1;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+
     padding: 10px;
   }
   .about-second-container-text {
@@ -471,7 +473,7 @@
     font-size: 0.8rem;
   }
   .footer-about {
-    padding-top: 325px;
+    padding-top: 35px;
   }
 }
 
@@ -556,6 +558,9 @@
     background-color: #110d57;
     width: 100%;
     height: 50px;
+    position: relative;
+    bottom: -30px;
+    z-index: -9;
   }
   .about-second-container {
     background-color: #fafafa;
@@ -565,10 +570,7 @@
     flex-wrap: wrap;
     border-radius: 10px;
     z-index: 1;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+   
     padding: 10px;
   }
   .about-second-container-text {
@@ -593,6 +595,6 @@
     font-size: 0.8rem;
   }
   .footer-about {
-    padding-top: 280px;
+    padding-top: 20px;
   }
 }

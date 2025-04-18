@@ -10,8 +10,11 @@
   width: 100%;
   height: 180px;
   position: relative;
+  bottom: -30px;
+  z-index: -9;
 }
 .contact-container {
+  margin: 0 auto;
   background-color: #fafafa;
   box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
   width: 75%;
@@ -19,10 +22,10 @@
   flex-wrap: wrap;
   border-radius: 50px;
   z-index: 1;
-  position: absolute;
+  /* position: absolute;
   top: 130px;
   left: 50%;
-  transform: translateX(-50%); /* X oxu üzrə tam ortada */
+  transform: translateX(-50%);  */
   padding: 20px;
 }
 .contact-container h1 {
@@ -93,8 +96,11 @@
     width: 100%;
     height: 160px;
     position: relative;
+    bottom: -30px;
+    z-index: -9;
   }
   .contact-container {
+    margin: 0 auto;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
     width: 90%;
@@ -102,10 +108,6 @@
     flex-wrap: wrap;
     border-radius: 20px;
     z-index: 1;
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
     padding: 30px 20px;
   }
   .contact-container h1 {
@@ -122,7 +124,7 @@
     padding: 20px;
     justify-content: space-between;
   }
-  .form-cont h4{
+  .form-cont h4 {
     font-size: 1.3rem;
   }
   .form-group {
@@ -158,7 +160,7 @@
     width: 100%;
     background-color: #110d57;
     color: white;
-    padding:5px 0;
+    padding: 5px 0;
     border-radius: 10px;
     transition-duration: 0.3s;
     cursor: pointer;
@@ -168,7 +170,7 @@
     color: #110d57;
     font-weight: 650;
   }
-  .footer-contact{
+  .footer-contact {
     padding-top: 230px;
   }
 }
@@ -184,10 +186,13 @@
   .small-div {
     background-color: #110d57;
     width: 100%;
-    height: 150px;
+    height: 120px;
     position: relative;
+    bottom: -30px;
+    z-index: -9;
   }
   .contact-container {
+    margin: 0 auto;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
     width: 90%;
@@ -195,10 +200,6 @@
     flex-wrap: wrap;
     border-radius: 20px;
     z-index: 1;
-    position: absolute;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
     padding: 20px 0;
   }
   .contact-container h1 {
@@ -271,8 +272,7 @@
     font-weight: 650;
   }
   .footer-contact {
-    position: relative;
-    margin-top: 20px;
+   padding-top: 20px;
   }
 }
 
@@ -287,10 +287,13 @@
   .small-div {
     background-color: #110d57;
     width: 100%;
-    height: 140px;
+    height: 110px;
     position: relative;
+    bottom: -30px;
+    z-index: -9;
   }
   .contact-container {
+    margin: 0 auto;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
     width: 90%;
@@ -298,10 +301,6 @@
     flex-wrap: wrap;
     border-radius: 10px;
     z-index: 1;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
     padding: 20px 0;
   }
   .contact-container h1 {
@@ -384,8 +383,7 @@
     font-weight: 650;
   }
   .footer-contact {
-    position: relative;
-    margin-top: 150px;
+    padding-top: 20px;
   }
 }
 
@@ -400,10 +398,13 @@
   .small-div {
     background-color: #110d57;
     width: 100%;
-    height: 130px;
+    height: 100px;
     position: relative;
+    bottom: -30px;
+    z-index: -9;
   }
   .contact-container {
+    margin: 0 auto;
     background-color: #fafafa;
     box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
     width: 90%;
@@ -411,10 +412,7 @@
     flex-wrap: wrap;
     border-radius: 20px;
     z-index: 1;
-    position: absolute;
-    top: 90px;
-    left: 50%;
-    transform: translateX(-50%); /* X oxu üzrə tam ortada */
+   
     padding: 20px 0;
   }
   .contact-container h1 {
@@ -492,7 +490,6 @@
     font-weight: 650;
   }
   .footer-contact {
-    position: relative;
-    padding-top: 80px;
+    padding-top: 10px;
   }
 }

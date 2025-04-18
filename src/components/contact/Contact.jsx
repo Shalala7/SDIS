@@ -66,7 +66,18 @@ const Contact = () => {
               <img src={linkedin} alt="linkedin" />
               <img src={insta} alt="insta" />
             </div>
-            <img className="map-img" src={map} alt="map" />
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12161.195528796134!2d49.9427837!3d40.3578967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2saz!4v1744969776856!5m2!1sen!2saz"
+                // width="600"
+                // height="450"
+                style={{ border: "0px", width: "100%", height: "300px" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            {/* <img className="map-img" src={map} alt="map" /> */}
           </div>
         </div>
       </section>
