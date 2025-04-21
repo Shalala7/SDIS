@@ -48,7 +48,7 @@
 
 .second-home {
   width: 100%;
-  min-height: 100vh;
+  min-height: 700px;
 }
 .second-home-container {
   width: 80%;
@@ -56,8 +56,8 @@
 }
 .second-home-container h4 {
   font-weight: 600;
-  margin-left: 35px;
-  margin-bottom: 30px;
+  text-align: center;
+  
 }
 .second-home-imgs {
   position: relative;

@@ -438,6 +438,127 @@
   }
 }
 
+@media(max-width:660px){
+  .about-first {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .small-div-about-first {
+    width: 100%;
+    background-color: #110d57;
+    height: 140px;
+  }
+  .small-div-about-first h1 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding-top: 105px;
+    text-align: center;
+  }
+  .about-first-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  .text {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .text h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  .text p {
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+  .images-about-first {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .img-about {
+    width: 49%;
+  }
+
+  .img-about img {
+    height: 230px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .imgs-about {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Dikey düzülüş */
+    justify-content: center;
+    gap: 10px; /* Şəkillər arasında boşluq */
+  }
+
+  .imgs-about img {
+    height: 105px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+
+  .about-second {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-about-second {
+    background-color: #110d57;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    bottom: -40px;
+    z-index: -9;
+  }
+  .about-second-container {
+    background-color: #fafafa;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    z-index: 1;
+
+    padding: 10px;
+  }
+  .about-second-container-text {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .about-second-container-text p {
+    font-size: 0.9rem;
+    font-weight: 450;
+    font-family: sans-serif;
+    letter-spacing: 0%;
+  }
+  .about-second-container-text hr {
+    border: 1px solid #110d57;
+  }
+  .about-second-container-text h5 {
+    margin: 0;
+  }
+  .about-second-container-text ul li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  .footer-about {
+    padding-top: 50px;
+  }
+}
+
 @media (min-width: 376px) and (max-width: 430px) {
   .about-first {
     width: 100%;
