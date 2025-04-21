@@ -73,7 +73,7 @@
 }
 
 .second-next-btn {
-  background-color: rgb(243, 237, 237);
+  background-color: rgb(242, 242, 243);
   border: none;
   position: absolute;
   top: 50%;
@@ -89,8 +89,8 @@
   transition: all 0.5s ease;
 
   &:hover {
-    background-color: lightgray;
-    border: 1px solid lightgray;
+    background-color: rgb(242, 242, 243);
+    border: none;
     color: black;
   }
 
@@ -98,7 +98,7 @@
 }
 
 .second-prev-btn {
-  background-color: rgb(243, 237, 237);
+  background-color: rgb(242, 242, 243);
   border: none;
   position: absolute;
   top: 50%;
@@ -115,8 +115,8 @@
   z-index: 1;
 
   &:hover {
-    background-color: lightgray;
-    border: 1px solid lightgray;
+    background-color: rgb(242, 242, 243);
+    border: 1px solid none;
     color: black;
   }
 }
