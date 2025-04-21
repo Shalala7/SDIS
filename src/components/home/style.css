@@ -1368,7 +1368,7 @@
 
   .third-home-container {
     width: 95%;
-    height: 200px;
+    
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -1684,7 +1684,7 @@
   }
   .third-home {
     width: 100%;
-    min-height: 350px;
+    min-height: 430px;
     background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
     display: grid;
     place-items: center;
@@ -1721,17 +1721,15 @@
     background-color: white;
     text-decoration: none;
     font-weight: 600;
-    width: 90%;
+    width: 85%;
     order: 3;
     padding: 2px;
-    margin-top: 7px;
-    margin-bottom: 10px;
+    margin: 10px auto;
     border-radius: 10px;
     color: #110d57;
     cursor: pointer;
     transition-duration: 0.3s;
     text-align: center;
-    margin-left: 10px;
     display: inline-block;
   }
 
@@ -1742,11 +1740,12 @@
 
   /* Qara div və içindəki elementlər */
   .third-home-images {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: auto;
     order: 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center; /* Ortaya gətirir */
   }
 
@@ -1877,7 +1876,7 @@
   .fifth-home {
     width: 100%;
     margin: 0 auto;
-    min-height: 60vh;
+    min-height: 380px;
     background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
   }
   .fifth-home h2 {
