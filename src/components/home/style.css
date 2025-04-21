@@ -126,7 +126,6 @@
 /* Qara div və içindəki elementlər */
 .third-home-images {
   width: 50%;
-  height: 100%;
   display: flex;
   justify-content: flex-end; /* Bütün elementləri sağa itələyir */
   align-items: center; /* Ortaya gətirir */
@@ -300,10 +299,988 @@
   width: 45%;
   color: white !important;
 }
-/* .footer {
-  padding: 0 !important;
-} */
 
+@media (min-width: 1327px) and (max-width: 1700px) {
+  .second-home {
+    min-height: 550px;
+  }
+  .second-home-imgs img {
+    width: 380px;
+  }
+  .second-home-container h4 {
+    margin-left: 50px;
+  }
+  .home-see-btn {
+    width: 350px;
+  }
+  .form-home .form-group {
+    width: 40%;
+    color: white !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1326px) {
+  .first-home {
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+  .first-home-container {
+    width: 80%;
+    padding-top: 50px;
+    min-height: 500px;
+    color: white;
+    display: flex;
+    margin: 0 2.3%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .first-text-home {
+    width: 45%;
+    text-align: left;
+  }
+  .first-text-home h1 {
+    font-size: 2rem;
+  }
+  .first-text-home p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+  }
+
+  .home-events-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .home-events-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+  .first-img-home {
+    width: 45%;
+  }
+  .first-img-home img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .second-home {
+    width: 100%;
+    min-height: 500px;
+  }
+  .second-home-container {
+    width: 85%;
+    margin: 80px auto;
+  }
+  .second-home-container h4 {
+    font-weight: 600;
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+  .second-home-imgs {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .second-home-imgs img {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .third-home {
+    width: 100%;
+    min-height: 450px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+
+  .third-home-container {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .third-home-text {
+    width: 40%;
+  }
+
+  .third-home-text h1 {
+    color: white;
+    font-size: 2.1rem;
+  }
+
+  .third-home-text p {
+    font-size: 1rem;
+    color: white;
+    margin: 10px 0;
+  }
+
+  .home-see-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 330px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .home-see-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+
+  /* Qara div və içindəki elementlər */
+  .third-home-images {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; /* Bütün elementləri sağa itələyir */
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .third-home-img {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .third-home-img img {
+    height: 300px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .third-home-imgs {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Dikey düzülüş */
+    align-items: flex-end; /* Sağ hizalama */
+    gap: 15px; /* Şəkillər arasında boşluq */
+  }
+
+  .third-home-imgs img {
+    height: 140px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+
+  .fourth-home {
+    width: 100%;
+    min-height: 650px;
+  }
+  .fourth-home-container {
+    width: 95%;
+    margin: 50px auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fourth-heading-home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fourth-heading-home h2 {
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+  }
+  .fourth-heading-home a {
+    color: rgb(139, 139, 139);
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+  }
+  .fourth-left-home {
+    width: 40%;
+  }
+  .fourth-left-home img {
+    width: 380px;
+  }
+  .fourth-left-home h5 {
+    margin-top: 20px;
+  }
+  .fourth-left-home h6 {
+    font-weight: 600;
+  }
+  .fourth-left-home p {
+    font-size: 0.95rem;
+    margin-top: 25px;
+  }
+  .fourth-left-home a {
+    background-color: #110d57;
+    color: white;
+    width: 350px;
+    border-radius: 10px;
+  }
+  .fourth-right-home {
+    width: 55%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column; /* Div-ləri dikey yerləşdirmək üçün */
+    justify-content: space-between; /* İlk div yuxarıda, ikinci div ortada, üçüncü div aşağıda */
+    /* Yuxarı və aşağı aralıq vermək */
+  }
+  .materials {
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: normal;
+    width: 100%;
+  }
+  .materials img {
+    width: 190px;
+    height: 170px;
+  }
+  .materials-text {
+    margin-left: 15px;
+  }
+  .materials-text p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  .time-country {
+    display: flex;
+    gap: 20px;
+  }
+  .fifth-home {
+    width: 100%;
+    min-height: 320px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .fifth-home h2 {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .fifth-home-container {
+    width: 70%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-around;
+  }
+  .fifth-home-container img {
+    width: 130px;
+    height: 130px;
+  }
+  .subscribe-home {
+    width: 100%;
+    margin: 60px auto;
+    min-height: 400px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .subscribe-home-container {
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 30px;
+  }
+  .subscribe-text-home {
+    width: 55%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+  .subscribe-text-home p {
+    margin: 20px 0;
+  }
+  .form-home {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+    gap: 15px;
+
+    flex-wrap: wrap;
+  }
+  .form-home .btn {
+    width: 300px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px !important;
+    transition-duration: 0.3s;
+    font-weight: 600;
+  }
+  .form-home .btn:hover {
+    background-color: white;
+    color: #110d57;
+    font-weight: 600;
+  }
+  .form-home .form-group {
+    width: 40%;
+    color: white !important;
+  }
+}
+
+@media (min-width: 868px) and (max-width: 991px) {
+  .first-home {
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+  .first-home-container {
+    width: 80%;
+    padding-top: 80px;
+    min-height: 500px;
+    color: white;
+    display: flex;
+    margin: 0 2.3%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .first-text-home {
+    width: 45%;
+    text-align: left;
+  }
+  .first-text-home h1 {
+    font-size: 2rem;
+  }
+  .first-text-home p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+  }
+
+  .home-events-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .home-events-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+  .first-img-home {
+    width: 45%;
+  }
+  .first-img-home img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .second-home {
+    width: 100%;
+    min-height: 500px;
+  }
+  .second-home-container {
+    width: 85%;
+    margin: 80px auto;
+  }
+  .second-home-container h4 {
+    font-weight: 600;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+  .second-home-imgs {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .second-home-imgs img {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .third-home {
+    width: 100%;
+    min-height: 450px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+
+  .third-home-container {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .third-home-text {
+    width: 40%;
+  }
+
+  .third-home-text h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .third-home-text p {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+  }
+
+  .home-see-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 280px;
+    padding: 2px;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .home-see-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+
+  /* Qara div və içindəki elementlər */
+  .third-home-images {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end; /* Bütün elementləri sağa itələyir */
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .third-home-img {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .third-home-img img {
+    height: 270px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .third-home-imgs {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Dikey düzülüş */
+    align-items: flex-end; /* Sağ hizalama */
+    gap: 15px; /* Şəkillər arasında boşluq */
+  }
+
+  .third-home-imgs img {
+    height: 130px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+
+  .fourth-home {
+    width: 100%;
+    min-height: 700px;
+  }
+  .fourth-home-container {
+    width: 97%;
+    margin: 50px auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fourth-heading-home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fourth-heading-home h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  .fourth-heading-home a {
+    color: rgb(139, 139, 139);
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+  }
+  .fourth-left-home {
+    width: 40%;
+  }
+  .fourth-left-home img {
+    width: 360px;
+  }
+  .fourth-left-home h5 {
+    margin-top: 20px;
+  }
+  .fourth-left-home h6 {
+    font-weight: 600;
+  }
+  .fourth-left-home p {
+    font-size: 0.9rem;
+    margin-top: 25px;
+  }
+  .fourth-left-home a {
+    background-color: #110d57;
+    color: white;
+    width: 330px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .fourth-right-home {
+    width: 56%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column; /* Div-ləri dikey yerləşdirmək üçün */
+    justify-content: space-between; /* İlk div yuxarıda, ikinci div ortada, üçüncü div aşağıda */
+    /* Yuxarı və aşağı aralıq vermək */
+  }
+  .materials {
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: normal;
+    width: 100%;
+  }
+  .materials img {
+    width: 190px;
+    height: 170px;
+  }
+  .materials-text {
+    margin-left: 15px;
+  }
+  .materials-text h5 {
+    font-size: 1.2rem;
+  }
+  .materials-text h6 {
+    font-size: 1rem;
+  }
+  .materials-text p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  .time-country {
+    display: none;
+  }
+  .fifth-home {
+    width: 100%;
+    min-height: 320px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .fifth-home h2 {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .fifth-home-container {
+    width: 75%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-around;
+  }
+  .fifth-home-container img {
+    width: 120px;
+    height: 120px;
+  }
+  .subscribe-home {
+    width: 100%;
+    margin: 60px auto;
+    min-height: 400px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .subscribe-home-container {
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 30px;
+  }
+  .subscribe-text-home {
+    width: 55%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+  .subscribe-text-home p {
+    margin: 20px 0;
+  }
+  .form-home {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+    gap: 15px;
+
+    flex-wrap: wrap;
+  }
+  .form-home .btn {
+    width: 300px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px !important;
+    transition-duration: 0.3s;
+    font-weight: 600;
+  }
+  .form-home .btn:hover {
+    background-color: white;
+    color: #110d57;
+    font-weight: 600;
+  }
+  .form-home .form-group {
+    width: 40%;
+    color: white !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 868px) {
+  .first-home {
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+  .first-home-container {
+    width: 80%;
+    padding-top: 80px;
+    min-height: 500px;
+    color: white;
+    display: flex;
+    margin: 0 2.3%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .first-text-home {
+    width: 45%;
+    text-align: left;
+  }
+  .first-text-home h1 {
+    font-size: 1.9rem;
+  }
+  .first-text-home p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .home-events-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 85%;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  .home-events-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+  .first-img-home {
+    width: 45%;
+  }
+  .first-img-home img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .second-home {
+    width: 100%;
+    min-height: 400px;
+  }
+  .second-home-container {
+    width: 90%;
+    margin: 80px auto;
+  }
+  .second-home-container h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .second-home-imgs {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .second-home-imgs img {
+    width: 220px;
+    margin: 0 auto;
+  }
+
+  .third-home {
+    width: 100%;
+    min-height: 450px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+
+  .third-home-container {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .third-home-text {
+    width: 40%;
+  }
+
+  .third-home-text h1 {
+    color: white;
+    font-size: 1.9rem;
+  }
+
+  .third-home-text p {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+  }
+
+  .home-see-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 38%;
+    padding: 2px;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .home-see-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+
+  /* Qara div və içindəki elementlər */
+  .third-home-images {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end; /* Bütün elementləri sağa itələyir */
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .third-home-img {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .third-home-img img {
+    height: 260px;
+    width: 100%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .third-home-imgs {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Dikey düzülüş */
+    align-items: flex-end; /* Sağ hizalama */
+    gap: 15px; /* Şəkillər arasında boşluq */
+  }
+
+  .third-home-imgs img {
+    height: 120px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+
+  .fourth-home {
+    width: 100%;
+    min-height: 700px;
+  }
+  .fourth-home-container {
+    width: 97%;
+    margin: 50px auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fourth-heading-home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fourth-heading-home h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  .fourth-heading-home a {
+    color: rgb(139, 139, 139);
+    font-weight: 600;
+    font-size: 0.9rem;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+  }
+  .fourth-left-home {
+    width: 40%;
+  }
+  .fourth-left-home img {
+    width: 330px;
+  }
+  .fourth-left-home h5 {
+    margin-top: 15px;
+  }
+  .fourth-left-home h6 {
+    font-weight: 600;
+  }
+  .fourth-left-home p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  .fourth-left-home a {
+    background-color: #110d57;
+    color: white;
+    width: 320px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .fourth-right-home {
+    width: 56%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column; /* Div-ləri dikey yerləşdirmək üçün */
+    justify-content: space-between; /* İlk div yuxarıda, ikinci div ortada, üçüncü div aşağıda */
+    /* Yuxarı və aşağı aralıq vermək */
+  }
+  .materials {
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: normal;
+    width: 100%;
+  }
+  .materials img {
+    width: 180px;
+    height: 180px;
+  }
+  .materials-text {
+    margin-left: 10px;
+  }
+  .materials-text h5 {
+    font-size: 1.2rem;
+  }
+  .materials-text h6 {
+    font-size: 1rem;
+  }
+  .materials-text p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+  .time-country {
+    display: none;
+  }
+  .fifth-home {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .fifth-home h2 {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .fifth-home-container {
+    width: 74%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-around;
+  }
+  .fifth-home-container img {
+    width: 110px;
+    height: 110px;
+  }
+  .subscribe-home {
+    width: 100%;
+    margin: 60px auto;
+    min-height: 400px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  }
+  .subscribe-home-container {
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 30px;
+  }
+  .subscribe-text-home {
+    width: 55%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+  .subscribe-text-home p {
+    margin: 20px 0;
+  }
+  .form-home {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+    gap: 15px;
+
+    flex-wrap: wrap;
+  }
+  .form-home .btn {
+    width: 300px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px !important;
+    transition-duration: 0.3s;
+    font-weight: 600;
+  }
+  .form-home .btn:hover {
+    background-color: white;
+    color: #110d57;
+    font-weight: 600;
+  }
+  .form-home .form-group {
+    width: 40%;
+    color: white !important;
+  }
+}
 @media (max-width: 768px) {
   .first-home {
     width: 100%;
@@ -358,39 +1335,40 @@
 
   .second-home {
     width: 100%;
-    min-height: 100vh;
+    min-height: 350px;
   }
   .second-home-container {
-    width: 80%;
-    margin: 50px auto;
+    width: 90%;
+    margin: 40px auto;
   }
   .second-home-container h4 {
     font-weight: 600;
-    margin-left: 30px;
+    font-size: 1.3rem;
+    margin-left: 20px;
     margin-bottom: 20px;
   }
   .second-home-imgs {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .second-home-imgs img {
-    width: 250px;
-    margin: 5px auto;
+    width: 200px;
+    margin: 0 auto;
   }
 
   .third-home {
     width: 100%;
-    min-height: 100vh;
+    min-height: 450px;
     background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
     display: grid;
     place-items: center;
   }
 
   .third-home-container {
-    width: 94%;
-    height: 260px;
+    width: 95%;
+    height: 200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -405,7 +1383,7 @@
 
   .third-home-text h1 {
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .third-home-text p {
@@ -418,8 +1396,8 @@
     background-color: white;
     text-decoration: none;
     font-weight: 600;
-    width: 35%;
-    padding: 5px;
+    width: 40%;
+    padding: 2px;
     margin: 0;
     border-radius: 10px;
     color: #110d57;
@@ -449,7 +1427,7 @@
   }
 
   .third-home-img img {
-    height: 270px;
+    height: 250px;
     width: 100%;
   }
 
@@ -464,7 +1442,7 @@
   }
 
   .third-home-imgs img {
-    height: 125px;
+    height: 115px;
     width: auto; /* Şəkillərin enini avtomatik saxlayır */
   }
 
@@ -500,7 +1478,7 @@
     width: 45%;
   }
   .fourth-left-home img {
-    width: 300px;
+    width: 280px;
   }
   .fourth-left-home h5 {
     margin-top: 15px;
@@ -523,6 +1501,7 @@
   .fourth-right-home {
     width: 55%;
     display: flex;
+    gap: 10px;
     flex-direction: column; /* Div-ləri dikey yerləşdirmək üçün */
     justify-content: space-between; /* İlk div yuxarıda, ikinci div ortada, üçüncü div aşağıda */
     /* Yuxarı və aşağı aralıq vermək */
@@ -544,7 +1523,7 @@
     font-size: 1rem;
   }
   .materials-text h6 {
-    font-size: 0.95rem;
+    display: none;
   }
   .materials-text p {
     font-size: 0.8rem;
@@ -555,7 +1534,7 @@
   }
   .fifth-home {
     width: 100%;
-    min-height: 70vh;
+    min-height: 260px;
     background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
   }
   .fifth-home h2 {
@@ -565,10 +1544,10 @@
     text-align: center;
   }
   .fifth-home-container {
-    width: 60%;
+    width: 75%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-content: space-around;
   }
@@ -624,7 +1603,7 @@
     font-weight: 600;
   }
   .form-home .form-group {
-    width: 40%;
+    width: 48%;
     color: white !important;
   }
 }
@@ -705,7 +1684,7 @@
   }
   .third-home {
     width: 100%;
-    min-height: 60vh;
+    min-height: 350px;
     background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
     display: grid;
     place-items: center;
@@ -866,8 +1845,8 @@
   }
 
   .materials img {
-    width: 170px;
-    height: 160px; /* Hündürlük stretch ilə uyğunlaşacaq */
+    width: 140px;
+    height: 150px; /* Hündürlük stretch ilə uyğunlaşacaq */
     object-fit: cover; /* şəkil boşluğa uyğun uzansın, kəsilmə olmadan */
     border-radius: 6px;
   }
@@ -911,14 +1890,16 @@
     gap: 10px;
     margin: 25px auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
   }
   .fifth-home-container img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     margin: 0 auto;
+
     align-items: center;
   }
   .subscribe-home {
@@ -983,8 +1964,9 @@
   }
   .third-home {
     padding: 10px;
-    min-height: 80vh;
+    min-height: 350px;
   }
+
   .third-home-images {
     width: 70%;
     height: auto;
@@ -1022,8 +2004,14 @@
     width: 80px; /* Şəkillərin enini avtomatik saxlayır */
   }
   .home-see-btn {
-    margin: 10px;
+    margin: 5px;
     padding: 0;
+  }
+  .materials img {
+    width: 130px;
+    height: 140px; /* Hündürlük stretch ilə uyğunlaşacaq */
+    object-fit: cover; /* şəkil boşluğa uyğun uzansın, kəsilmə olmadan */
+    border-radius: 6px;
   }
   .fourth-left-home a {
     width: 300px;
@@ -1034,7 +2022,7 @@
   }
   .fifth-home-container img {
     width: 100px;
-    height: 110px;
+    height: 100px;
     padding-bottom: 10px;
   }
   .subscribe-home {
@@ -1093,6 +2081,12 @@
   .second-home-imgs img {
     width: 130px;
     margin: 0 auto;
+  }
+  .materials img {
+    width: 120px;
+    height: 130px; /* Hündürlük stretch ilə uyğunlaşacaq */
+    object-fit: cover; /* şəkil boşluğa uyğun uzansın, kəsilmə olmadan */
+    border-radius: 6px;
   }
 }
 

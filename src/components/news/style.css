@@ -69,7 +69,7 @@
 }
 .news-materials-second {
   width: 50%;
-  height: 250px;
+  /* height: 250px; */
   display: flex;
   align-items: center;
 }
@@ -81,10 +81,205 @@
   font-size: 0.9rem;
 }
 
+@media (min-width: 1000px) and (max-width: 1326px) {
+  .news {
+    width: 100%;
+    min-height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-news {
+    background-color: #110d57;
+    width: 100%;
+    height: 190px;
+    position: relative;
+    bottom: -30px;
+    z-index: -9;
+  }
+  .small-div-news h2 {
+    margin: 90px 0;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+  }
+  .news-container {
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    z-index: 1;
+    /* position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);  */
+    padding: 40px 80px;
+  }
+  .news-materials-first {
+    display: flex;
+    justify-content: space-between;
+  }
+  .news-materials-first img {
+    width: 45%;
+    height: 200px;
+  }
+  .news-material-text {
+    width: 48%;
+  }
+  .news-material-text p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .time-news {
+    display: flex;
+    gap: 30px;
+  }
+  .news-container-text {
+    margin: 20px 0;
+  }
+  .news-container-text ul li {
+    font-size: 1.125rem;
+    margin: 10px 0;
+  }
+  .news-container-text p {
+    margin: 50px 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    width: 90%;
+  }
+  .news-materials-second {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .news-materials-second img {
+    align-items: normal;
+    width: 160px;
+    height: 170px;
+  }
+  .news-materials-text {
+    margin-left: 10px;
+  }
+  .news-materials-text h6 {
+    margin: 0;
+  }
+  .news-materials-text h5 {
+    font-size: 1.25rem;
+  }
+  .news-materials-text p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .news {
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* X oxu üzrə ortada */
+  }
+  .small-div-news {
+    background-color: #110d57;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    position: relative;
+    bottom: -30px;
+    z-index: -9;
+  }
+  .small-div-news h2 {
+    margin: 80px 0;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+  }
+  .news-container {
+    background-color: white;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.3);
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    z-index: 1;
+    padding: 40px 20px;
+  }
+  .news-materials-first {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .news-materials-first img {
+    width: 48%;
+    height: 200px;
+  }
+  .news-material-text {
+    width: 50%;
+  }
+  .news-material-text h5 {
+    font-size: 1.2rem;
+  }
+  .news-material-text h6 {
+    margin: 0;
+  }
+  .news-material-text p {
+    font-size: 1rem;
+    margin: 3px 0;
+  }
+  .time-news {
+    display: flex;
+    gap: 30px;
+  }
+  .news-container-text {
+    margin: 25px 0;
+  }
+  .news-container-text ul li {
+    font-size: 1.1rem;
+    margin: 15px 0;
+  }
+  .news-container-text p {
+    margin: 30px auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 90%;
+  }
+  .news-materials-second {
+    width: 100%;
+    /* height: 200px; */
+    display: flex;
+    align-items: center;
+  }
+  .news-materials-second img {
+    width: 160px;
+    height: 150px;
+  }
+  .news-materials-text h6{
+    margin: 0;
+  }
+  .news-materials-text {
+    padding: 20px;
+  }
+  .news-materials-text p {
+    font-size: 1rem;
+    margin:  0;
+  }
+  .time-news {
+    margin: 2px 0;
+  }
+ 
+}
+
 @media (max-width: 768px) {
   .news {
     width: 100%;
-    min-height: 250vh;
+    min-height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center; /* X oxu üzrə ortada */
@@ -157,7 +352,7 @@
   }
   .news-materials-second {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     display: flex;
     align-items: center;
   }
@@ -175,9 +370,7 @@
   .time-news {
     margin: 2px 0;
   }
-  .footer-news {
-    padding-top: 250px;
-  }
+ 
 }
 
 @media (min-width: 376px) and (max-width: 430px) {
@@ -285,7 +478,7 @@
 
   .news-materials-second {
     width: 100%;
-    height: 130px;
+    /* height: 130px; */
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -419,7 +612,7 @@
 
   .news-materials-second {
     width: 100%;
-    height: 131px;
+    /* height: 131px; */
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -553,7 +746,7 @@
   .news-materials-second {
     width: 100%;
     margin-top: 20px;
-    height: 131px;
+    /* height: 131px; */
     display: flex;
     align-items: center;
   }
