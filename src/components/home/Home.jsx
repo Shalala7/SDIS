@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import homeData from "../../../public/homeData.json";
 import "./style.css";
 import Footer from "../footer/Footer";
-
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 // Şəkilləri import edirik
 import sdisLogo from "../../assets/images/sdisLogo.png";
 import goal1 from "../../assets/images/goal1.png";
@@ -17,7 +17,7 @@ import newsH1 from "../../assets/images/newsH1.png";
 import newsH2 from "../../assets/images/newsH2.png";
 import newsH3 from "../../assets/images/newsH3.png";
 import empty from "../../assets/images/empty.png";
-
+import Slider from "react-slick";
 // JSON-dakı şəkil adlarını obyekt kimi saxlayırıq
 const images = {
   goal1,
@@ -34,6 +34,51 @@ const images = {
 };
 
 const Home = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <NextBtn />,
+    prevArrow: <PrevBtn />,
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: { slidesToShow: 3 }
+      },
+      {
+        breakpoint: 1160,
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 668,
+        settings: { slidesToShow: 1 }
+      }
+    ]
+  };
+
+  function NextBtn({ onClick }) {
+    return (
+      <button
+        className="second-next-btn"
+        onClick={onClick}
+      >
+        <IoIosArrowForward size={20} />
+      </button>
+    );
+  }
+
+  function PrevBtn({ onClick }) {
+    return (
+      <button
+        className="second-prev-btn"
+        onClick={onClick}
+      >
+        <IoIosArrowBack size={20} />
+      </button>
+    );
+  }
   return (
     <>
       {/* Hero Section */}
@@ -60,9 +105,16 @@ const Home = () => {
         <div className="second-home-container">
           <h4>{homeData.goals.title}</h4>
           <div className="second-home-imgs">
-            {homeData.goals.images.map((img, index) => (
+            {/* {homeData.goals.images.map((img, index) => (
               <img key={index} src={images[img]} alt={`goal-${index}`} />
-            ))}
+            ))} */}
+            <Slider {...settings}>
+              {homeData.goals.images.map((img, index) => (
+                <div key={index}>
+                  <img src={images[img]} alt={`goal-${index}`} />
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </section>

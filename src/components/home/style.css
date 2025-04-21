@@ -52,7 +52,7 @@
 }
 .second-home-container {
   width: 80%;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 .second-home-container h4 {
   font-weight: 600;
@@ -60,14 +60,67 @@
   margin-bottom: 30px;
 }
 .second-home-imgs {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
 }
+
 .second-home-imgs img {
   width: 300px;
   margin: 0 auto;
+}
+
+.second-next-btn {
+  background-color: #a7b3c7;
+  border: 1px solid #a7b3c7;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: #a7b3c7;
+    border: 1px solid #a7b3c7;
+    color: white;
+  }
+
+  &:focus {
+    border: none;
+  }
+}
+
+.second-prev-btn {
+  background-color: #a7b3c7;
+  border: 1px solid #a7b3c7;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  transition: all 0.5s ease;
+  z-index: 1;
+
+  &:hover {
+    background-color: #a7b3c7;
+    border: 1px solid #a7b3c7;
+    color: white;
+  }
 }
 
 .third-home {
@@ -304,9 +357,9 @@
   .second-home {
     min-height: 550px;
   }
-  .second-home-imgs img {
+  /* .second-home-imgs img {
     width: 380px;
-  }
+  } */
   .second-home-container h4 {
     margin-left: 50px;
   }
@@ -378,7 +431,7 @@
   }
   .second-home-container {
     width: 85%;
-    margin: 80px auto;
+    margin: 0px auto;
   }
   .second-home-container h4 {
     font-weight: 600;
@@ -388,8 +441,8 @@
   .second-home-imgs {
     width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
   }
   .second-home-imgs img {
     width: 320px;
@@ -698,17 +751,15 @@
   }
   .second-home-container h4 {
     font-weight: 600;
-    margin-left: 25px;
+    margin-left: 60px;
     margin-bottom: 20px;
   }
   .second-home-imgs {
     width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
   .second-home-imgs img {
-    width: 240px;
+    width: 300px;
     margin: 0 auto;
   }
 
@@ -1022,17 +1073,15 @@
   .second-home-container h4 {
     font-weight: 600;
     font-size: 1.3rem;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 20px;
   }
   .second-home-imgs {
     width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
   .second-home-imgs img {
-    width: 220px;
+    width: 300px;
     margin: 0 auto;
   }
 
@@ -1284,17 +1333,18 @@
 @media (max-width: 768px) {
   .first-home {
     width: 100%;
-    min-height: 120vh;
+    min-height: 500px;
     background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
     display: grid;
     place-items: center;
   }
   .first-home-container {
     width: 80%;
-    min-height: 50vh;
+    min-height: 400px;
     color: white;
     display: flex;
-    margin: 0 1.5%;
+
+    margin: 0px 1.5%;
     align-items: center;
     justify-content: space-between;
   }
@@ -1329,8 +1379,8 @@
     width: 40%;
   }
   .first-img-home img {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
   }
 
   .second-home {
@@ -1344,17 +1394,15 @@
   .second-home-container h4 {
     font-weight: 600;
     font-size: 1.3rem;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-bottom: 20px;
   }
   .second-home-imgs {
     width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
   .second-home-imgs img {
-    width: 200px;
+    width: 280px;
     margin: 0 auto;
   }
 
@@ -1368,7 +1416,7 @@
 
   .third-home-container {
     width: 95%;
-    
+
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -1457,7 +1505,7 @@
     flex-wrap: wrap;
   }
   .fourth-heading-home {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
@@ -1475,10 +1523,11 @@
     border-radius: 10px;
   }
   .fourth-left-home {
-    width: 45%;
+    width: 100%;
   }
   .fourth-left-home img {
-    width: 280px;
+    width: 90%;
+    height: 300px;
   }
   .fourth-left-home h5 {
     margin-top: 15px;
@@ -1496,10 +1545,11 @@
     color: white;
     padding: 5px;
     width: 280px;
+    margin: 10px 0;
     border-radius: 10px;
   }
   .fourth-right-home {
-    width: 55%;
+    width: 100%;
     display: flex;
     gap: 10px;
     flex-direction: column; /* Div-ləri dikey yerləşdirmək üçün */
@@ -1509,6 +1559,7 @@
   .materials {
     display: flex;
     flex-wrap: nowrap;
+    margin: 20px 0;
     align-items: center; /* Şəkil və mətnin ortada düzülməsi üçün */
     width: 100%;
   }
@@ -1520,18 +1571,14 @@
     margin-left: 10px;
   }
   .materials-text h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
-  .materials-text h6 {
-    display: none;
-  }
+
   .materials-text p {
     font-size: 0.8rem;
     margin: 5px 0;
   }
-  .time-country {
-    display: none;
-  }
+
   .fifth-home {
     width: 100%;
     min-height: 260px;
@@ -1607,7 +1654,162 @@
     color: white !important;
   }
 }
+@media (max-width: 620px) {
+  .first-home {
+    min-height: auto;
+    padding: 40px 0;
+  }
 
+  .first-home-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    min-height: 50vh;
+    padding-top: 70px;
+    text-align: center;
+  }
+  .first-text-home {
+    width: 90%;
+    text-align: center;
+  }
+  .first-img-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .first-img-home img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  .home-events-btn {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 0;
+  }
+  .second-home-container {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .third-home {
+    width: 100%;
+    min-height: 450px;
+    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    display: grid;
+    place-items: center;
+  }
+
+  .third-home-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .third-home-text {
+    width: 90%;
+    order: 1;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .third-home-text h1 {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .third-home-text p {
+    font-size: 0.9rem;
+    color: white;
+    margin: 10px 0;
+  }
+
+  .home-see-btn {
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    width: 68%;
+    order: 3;
+    padding: 2px;
+    margin: 10px auto;
+    border-radius: 10px;
+    color: #110d57;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .home-see-btn:hover {
+    background-color: #110d57;
+    color: white;
+  }
+
+  /* Qara div və içindəki elementlər */
+  .third-home-images {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ortaya gətirir */
+  }
+
+  .third-home-img {
+    width: 50%;
+    margin-right: 0;
+    justify-content: flex-end;
+  }
+
+  .third-home-img img {
+    height: 240px;
+    width: 90%;
+  }
+
+  /* Boz divləri sağa yerləşdirmək */
+  .third-home-imgs {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Dikey düzülüş */
+    align-items: center; /* Sağ hizalama */
+    gap: 10px; /* Şəkillər arasında boşluq */
+  }
+
+  .third-home-imgs img {
+    height: 110px;
+    width: auto; /* Şəkillərin enini avtomatik saxlayır */
+  }
+  .fifth-home {
+    height: 300px;
+  }
+  .fifth-home-container {
+    width: 95%;
+    gap: 10px;
+    margin: 20px auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .fifth-home-container img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
 @media (max-width: 430px) {
   .first-home {
     min-height: auto;
@@ -1675,11 +1877,15 @@
     width: 100%;
     margin: 0 auto;
     gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  }
+  .second-next-btn {
+    right: -8%;
+  }
+  .second-prev-btn {
+    left: -8%;
   }
   .second-home-imgs img {
-    width: 150px;
+    width: 250px;
     margin: 0 auto;
   }
   .third-home {
@@ -1898,7 +2104,6 @@
     width: 110px;
     height: 110px;
     margin: 0 auto;
-
     align-items: center;
   }
   .subscribe-home {
@@ -2074,11 +2279,9 @@
     width: 100%;
     margin: 0 auto;
     gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
   .second-home-imgs img {
-    width: 130px;
+    width: 300px;
     margin: 0 auto;
   }
   .materials img {
@@ -2156,11 +2359,9 @@
     width: 100%;
     margin: 0 auto;
     gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
   .second-home-imgs img {
-    width: 130px;
+    width: 300px;
     margin: 0 auto;
   }
   .third-home {
