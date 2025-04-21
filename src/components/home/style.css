@@ -73,8 +73,8 @@
 }
 
 .second-next-btn {
-  background-color: #a7b3c7;
-  border: 1px solid #a7b3c7;
+  background-color: rgb(243, 237, 237);
+  border: none;
   position: absolute;
   top: 50%;
   right: 0;
@@ -89,19 +89,17 @@
   transition: all 0.5s ease;
 
   &:hover {
-    background-color: #a7b3c7;
-    border: 1px solid #a7b3c7;
-    color: white;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    color: black;
   }
 
-  &:focus {
-    border: none;
-  }
+ 
 }
 
 .second-prev-btn {
-  background-color: #a7b3c7;
-  border: 1px solid #a7b3c7;
+  background-color: rgb(243, 237, 237);
+  border: none;
   position: absolute;
   top: 50%;
   left: 0;
@@ -117,9 +115,9 @@
   z-index: 1;
 
   &:hover {
-    background-color: #a7b3c7;
-    border: 1px solid #a7b3c7;
-    color: white;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    color: black;
   }
 }
 
