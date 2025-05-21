@@ -1,18 +1,23 @@
 {
-    "logo": "../../src/assets/images/sdisLogo.png",
-    "logoText": "Sustainable Development Science and Innovation",
-    "quickLinks": [
-      { "name": "Home", "path": "/" },
-      { "name": "About us", "path": "/about" },
-      { "name": "News", "path": "/news" },
-      { "name": "Events", "path": "/events" },
-      { "name": "Contact", "path": "/contact" }
-    ],
-    "membershipLinks": [
-      { "name": "Sign in", "path": "/login" },
-      { "name": "Sign up", "path": "/registerSite" },
-      { "name": "Register", "path": "/registerSite" },
-      { "name": "Reset password", "path": "/reset" }
-    ],
-    "copyright": "2025 SDIS. All Rights Reserved."
-  }
+  "logo": "../../src/assets/images/sdisLogo.png",
+  "logoText": "Sustainable Development Science and Innovation",
+  "quickLinks": [
+    { "name": "Home", "path": "/" },
+    { "name": "About us", "path": "/about" },
+    { "name": "News", "path": "/news" },
+    { "name": "Events", "path": "/events" },
+    { "name": "Contact", "path": "/contact" }
+  ],
+  "membershipLinks": [
+    { "name": "Sign in", "path": "/login" },
+    { "name": "Sign up", "path": "/registerSite" },
+    { "name": "Register", "path": "/registerSite" },
+    { "name": "Reset password", "path": "/reset" }
+  ],
+  "privacy": [
+    { "name": "Privacy Policy", "path": "/home" },
+    { "name": "Terms & conditions", "path": "/home" },
+    { "name": "Terms of use", "path": "/home" }
+  ],
+  "copyright": "2025 SDIS. All Rights Reserved."
+}

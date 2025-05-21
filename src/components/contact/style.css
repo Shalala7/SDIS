@@ -47,6 +47,7 @@
   color: black !important;
 }
 .form-group input {
+  background-color: white !important;
   box-shadow: none !important;
   outline: none !important;
 }

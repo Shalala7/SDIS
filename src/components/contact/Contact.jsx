@@ -1,9 +1,9 @@
 import "./style.css";
 import map from "../../assets/images/map.png";
-import insta from "../../assets/images/instagram.png";
-import facebook from "../../assets/images/facebook.png";
-import linkedin from "../../assets/images/linkedin.png";
-import twitter from "../../assets/images/twitter.png";
+import insta from "../../assets/images/insta.svg";
+import facebook from "../../assets/images/facebook.svg";
+import linkedin from "../../assets/images/linkedin.svg";
+import twitter from "../../assets/images/twitter.svg";
 import Footer from "../footer/Footer";
 
 const Contact = () => {

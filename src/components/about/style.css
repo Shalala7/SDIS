@@ -36,17 +36,14 @@
   justify-content: flex-end; /* Bütün elementləri sağa itələyir */
   align-items: center; /* Ortaya gətirir */
 }
-
 .img-about {
   width: 49%;
   justify-content: flex-end;
 }
-
 .img-about img {
   height: 370px;
   width: 100%;
 }
-
 /* Boz divləri sağa yerləşdirmək */
 .imgs-about {
   width: 40%;
@@ -56,12 +53,10 @@
   align-items: flex-end; /* Sağ hizalama */
   gap: 35px; /* Şəkillər arasında boşluq */
 }
-
 .imgs-about img {
   height: 165px;
   width: auto; /* Şəkillərin enini avtomatik saxlayır */
 }
-
 .about-second {
   width: 100%;
   min-height: 145vh;
@@ -87,10 +82,6 @@
   flex-wrap: wrap;
   border-radius: 30px;
   z-index: 1;
-  /* position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);  */
   padding: 20px;
 }
 .about-second-container-text {
@@ -113,6 +104,91 @@
   margin: 10px 0;
   font-size: 1.1rem;
 }
+
+/* ====================== */
+/* ==== ANİMASİYALAR ==== */
+/* ====================== */
+
+.small-div-about-first h1 {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideFadeDown 1.2s ease-out forwards;
+}
+
+.about-first-container .text {
+  opacity: 0;
+  animation: slideLeft 1.5s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.about-first-container .images-about-first {
+  opacity: 0;
+  animation: slideRight 1.5s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.about-second-container {
+  transform: scale(0.95);
+  opacity: 0;
+  animation: scaleIn 1.4s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.about-second-container-text ul li {
+  opacity: 0;
+  animation: fadeInList 0.8s ease forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+/* ==== KEYFRAMES ==== */
+
+@keyframes slideFadeDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInList {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (min-width: 1000px) and (max-width: 1220px) {
   .about-first {
     width: 100%;

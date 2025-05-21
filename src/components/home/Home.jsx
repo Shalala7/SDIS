@@ -1,10 +1,13 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 import homeData from "../../../public/homeData.json";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 import Footer from "../footer/Footer";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-// Şəkilləri import edirik
+
 import sdisLogo from "../../assets/images/sdisLogo.png";
 import goal1 from "../../assets/images/goal1.png";
 import goal2 from "../../assets/images/goal2.png";
@@ -17,8 +20,7 @@ import newsH1 from "../../assets/images/newsH1.png";
 import newsH2 from "../../assets/images/newsH2.png";
 import newsH3 from "../../assets/images/newsH3.png";
 import empty from "../../assets/images/empty.png";
-import Slider from "react-slick";
-// JSON-dakı şəkil adlarını obyekt kimi saxlayırıq
+
 const images = {
   goal1,
   goal2,
@@ -34,14 +36,95 @@ const images = {
 };
 
 const Home = () => {
+  const secondHomeRef = useRef(null);
+  const fourthRef = useRef(null);
+
+  // Fourth section animasiya üçün state-lər
+  const [showLeft, setShowLeft] = useState(false);
+  const [showRight, setShowRight] = useState(false);
+  const [showMaterialsIndexes, setShowMaterialsIndexes] = useState([]);
+
+  // Second section slider autoplay state
+  const [startAutoplay, setStartAutoplay] = useState(false);
+
+  // IntersectionObserver - second section (slider autoplay)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartAutoplay(true);
+        } else {
+          setStartAutoplay(false);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (secondHomeRef.current) {
+      observer.observe(secondHomeRef.current);
+    }
+
+    return () => {
+      if (secondHomeRef.current) {
+        observer.unobserve(secondHomeRef.current);
+      }
+    };
+  }, []);
+
+  // IntersectionObserver - fourth section (animasiya)
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Sıfırla
+          setShowLeft(false);
+          setShowRight(false);
+          setShowMaterialsIndexes([]);
+
+          // left div dərhal göstər
+          setTimeout(() => {
+            setShowLeft(true);
+          }, 0);
+
+          // right div 1 saniyə sonra göstər və materials-ları 0.5 saniyə fərqlə göstər
+          setTimeout(() => {
+            setShowRight(true);
+
+            homeData.news.articles.forEach((_, index) => {
+              setTimeout(() => {
+                setShowMaterialsIndexes((prev) => [...prev, index]);
+              }, index * 500);
+            });
+          }, 1000);
+        } else {
+          // Görünmürsə gizlət
+          setShowLeft(false);
+          setShowRight(false);
+          setShowMaterialsIndexes([]);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (fourthRef.current) {
+      observer.observe(fourthRef.current);
+    }
+
+    return () => {
+      if (fourthRef.current) {
+        observer.unobserve(fourthRef.current);
+      }
+    };
+  }, []);
+
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 300,
-    slidesToShow: 4,
+    speed: 1000,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <NextBtn />,
-    prevArrow: <PrevBtn />,
+    autoplay: startAutoplay,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1500,
@@ -60,10 +143,7 @@ const Home = () => {
 
   function NextBtn({ onClick }) {
     return (
-      <button
-        className="second-next-btn"
-        onClick={onClick}
-      >
+      <button className="second-next-btn" onClick={onClick}>
         <IoIosArrowForward size={20} />
       </button>
     );
@@ -71,15 +151,12 @@ const Home = () => {
 
   function PrevBtn({ onClick }) {
     return (
-      <button
-        className="second-prev-btn"
-        onClick={onClick}
-      >
+      <button className="second-prev-btn" onClick={onClick}>
         <IoIosArrowBack size={20} />
       </button>
     );
   }
-  
+
   return (
     <>
       {/* Hero Section */}
@@ -102,14 +179,11 @@ const Home = () => {
       </section>
 
       {/* Goals Section */}
-      <section className="second-home">
+      <section className="second-home" ref={secondHomeRef}>
         <div className="second-home-container">
           <h4>{homeData.goals.title}</h4>
           <div className="second-home-imgs">
-            {/* {homeData.goals.images.map((img, index) => (
-              <img key={index} src={images[img]} alt={`goal-${index}`} />
-            ))} */}
-            <Slider {...settings}>
+            <Slider key={startAutoplay ? "play" : "pause"} {...settings}>
               {homeData.goals.images.map((img, index) => (
                 <div key={index}>
                   <img src={images[img]} alt={`goal-${index}`} />
@@ -133,7 +207,12 @@ const Home = () => {
             </div>
             <div className="third-home-imgs">
               {homeData.about.images.small.map((img, index) => (
-                <img key={index} src={images[img]} alt={`rec-${index}`} />
+                <img
+                  key={index}
+                  src={images[img]}
+                  alt={`rec-${index}`}
+                  style={{ animationDelay: `${index + 1}s` }}
+                />
               ))}
             </div>
           </div>
@@ -144,7 +223,7 @@ const Home = () => {
       </section>
 
       {/* News Section */}
-      <section className="fourth-home">
+      <section className="fourth-home" ref={fourthRef}>
         <div className="fourth-home-container">
           <div className="fourth-heading-home">
             <h2>{homeData.news.title}</h2>
@@ -156,7 +235,13 @@ const Home = () => {
             </NavLink>
           </div>
 
-          <div className="fourth-left-home">
+          <div
+            className={`fourth-left-home ${showLeft ? "visible" : "hidden"}`}
+            style={{
+              opacity: showLeft ? 1 : 0,
+              transition: "opacity 0.5s ease-in-out"
+            }}
+          >
             <img src={images[homeData.news.featured.image]} alt="news" />
             <h5>{homeData.news.featured.title}</h5>
             <h6>{homeData.news.featured.subtitle}</h6>
@@ -169,9 +254,22 @@ const Home = () => {
             </NavLink>
           </div>
 
-          <div className="fourth-right-home">
+          <div
+            className={`fourth-right-home ${showRight ? "visible" : "hidden"}`}
+            style={{
+              opacity: showRight ? 1 : 0,
+              transition: "opacity 0.5s ease-in-out"
+            }}
+          >
             {homeData.news.articles.map((article, index) => (
-              <div className="materials" key={index}>
+              <div
+                className="materials"
+                key={index}
+                style={{
+                  opacity: showMaterialsIndexes.includes(index) ? 1 : 0,
+                  transition: "opacity 0.5s ease-in-out"
+                }}
+              >
                 <img src={images[article.image]} alt={`news-${index}`} />
                 <div className="materials-text">
                   <h5>{article.title}</h5>
@@ -192,9 +290,13 @@ const Home = () => {
       <section className="fifth-home">
         <h2>{homeData.partners.title}</h2>
         <div className="fifth-home-container">
-          {homeData.partners.logos.map((logo, index) => (
-            <img key={index} src={images[logo]} alt={`partner-${index}`} />
-          ))}
+          <div className="partner-slide">
+            {homeData.partners.logos
+              .concat(homeData.partners.logos)
+              .map((logo, index) => (
+                <img key={index} src={images[logo]} alt={`partner-${index}`} />
+              ))}
+          </div>
         </div>
       </section>
 
@@ -215,6 +317,7 @@ const Home = () => {
                   type={field.type}
                 />
               </div>
+              
             ))}
             <NavLink className="btn subscribe-btn-home">
               {homeData.subscribe.buttonText}
@@ -222,6 +325,7 @@ const Home = () => {
           </form>
         </div>
       </section>
+
       <Footer />
     </>
   );

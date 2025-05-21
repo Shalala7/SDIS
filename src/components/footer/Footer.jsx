@@ -1,10 +1,10 @@
 import "./style.css";
 import footerData from "../../../public/footerData.json";
 import sdisLogo from "../../assets/images/sdisLogo.png";
-import insta from "../../assets/images/instagram.png";
-import facebook from "../../assets/images/facebook.png";
-import linkedin from "../../assets/images/linkedin.png";
-import twitter from "../../assets/images/twitter.png";
+import insta from "../../assets/images/insta.svg";
+import facebook from "../../assets/images/facebook.svg";
+import linkedin from "../../assets/images/linkedin.svg";
+import twitter from "../../assets/images/twitter.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -39,10 +39,18 @@ const Footer = () => {
               </li>
             ))}
           </ul>
+          <ul>
+            <h5>Legal & Compliance</h5>
+            {footerData.privacy.map((link, index) => (
+              <li key={index}>
+                <Link to={link.path}>{link.name}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-      <p>{footerData.copyright}</p>
       <hr />
+      <p>{footerData.copyright}</p>
     </section>
   );
 };

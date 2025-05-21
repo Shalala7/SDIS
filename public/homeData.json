@@ -72,9 +72,9 @@
           "placeholder": "Enter your email",
           "type": "email"
         },
-        {
-          "label": "Name",
-          "placeholder": "Enter your name",
+         {
+          "label": "Message",
+          "placeholder": "Enter your suggestions",
           "type": "text"
         }
       ],

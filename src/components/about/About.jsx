@@ -52,7 +52,7 @@ const About = () => {
             </h5>
             <ul>
               {aboutData.sections[1].highlights.map((item, index) => (
-                <li key={index}>
+                <li key={index} style={{ "--i": index }}>
                   <b>{item.title}:</b> {item.description}
                 </li>
               ))}
