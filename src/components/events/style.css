@@ -70,7 +70,7 @@
   margin: 20px 0;
 }
 
-@media(min-width:769px) and (max-width:1260px){
+@media (min-width: 769px) and (max-width: 1260px) {
   .events {
     width: 100%;
     min-height: 400px;
@@ -212,6 +212,9 @@
     height: 70px;
     padding-top: 35px;
   }
+  .small-div-events h1 {
+    font-size: 1rem;
+  }
   .events-container {
     width: 90%;
     margin: 20px auto;
@@ -272,9 +275,8 @@
     height: 50px;
     padding-top: 30px;
   }
-  .small-div-events h1{
-    font-size: 1.1rem !important;
-    
+  .small-div-events h1 {
+    font-size: 1rem !important;
   }
   .events-container {
     width: 90%;
@@ -335,7 +337,9 @@
     width: 95%;
     bottom: 5%;
   }
-
+  .small-div-events h1 {
+    font-size: 1rem !important;
+  }
   .text-event a {
     width: auto;
     font-size: 0.6rem;
@@ -362,7 +366,7 @@
     padding-top: 25px;
   }
   .small-div-events h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .events-container {
     width: 90%;
