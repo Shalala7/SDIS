@@ -118,15 +118,6 @@
   }
 }
 
-.second-next-btn:focus,
-.second-prev-btn:focus,
-.second-next-btn:active,
-.second-prev-btn:active {
-  outline: none;
-  border: none;
-  box-shadow: none;
-}
-
 .third-home {
   width: 100%;
   min-height: 100vh;
@@ -313,9 +304,10 @@
 }
 .fifth-home-container {
   width: 60%;
-  margin: 60px auto;
+  margin: 30px auto;
   display: grid;
   overflow: hidden;
+  padding: 30px;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   justify-content: space-around;
@@ -368,10 +360,13 @@
 .form-home {
   align-items: center;
   justify-content: center;
+  width: 100%;
+  flex-direction: column;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   padding-top: 40px;
   gap: 15px;
-  flex-wrap: wrap;
 }
 .form-home .btn {
   width: 300px;
@@ -389,7 +384,7 @@
   font-weight: 600;
 }
 .form-home .form-group {
-  width: 100%;
+  width: 51%;
   color: white !important;
 }
 
@@ -1829,7 +1824,7 @@
     height: 110px;
     width: auto; /* Şəkillərin enini avtomatik saxlayır */
   }
-  
+
   .fifth-home-container {
     width: 95%;
     gap: 10px;
