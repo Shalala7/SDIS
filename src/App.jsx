@@ -11,7 +11,7 @@ import Login from "./components/login/Login";
 import Verification from "./components/verification/Verification";
 import Reset from "./components/reset/Reset";
 import RegisterSite from "./components/registerSite/registerSite";
-import EventDetails from "./components/eventDetails/eventDetails";
+import EventDetails from "./components/eventDetails/EventDetails";
 
 const Main = () => {
   const location = useLocation();
