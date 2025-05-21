@@ -2,8 +2,14 @@ import "./style.css";
 import Footer from "../footer/Footer";
 import mount from "../../assets/images/mount.png";
 import news4 from "../../assets/images/news4.png";
+import { useEffect } from "react";
+
 
 const News = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <section className="news">
@@ -13,7 +19,6 @@ const News = () => {
         <div className="news-container">
           <div className="news-materials-first">
             <img src={mount} alt="" />
-            
           </div>
           <hr />
           <div className="news-container-text">

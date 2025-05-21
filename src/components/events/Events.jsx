@@ -1,5 +1,6 @@
 import "./style.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 // import eventsData from "../../../public/eventsData.json";
 import pic1 from "../../assets/images/pic1.png";
 import pic2 from "../../assets/images/pic2.png";
@@ -12,6 +13,9 @@ import Footer from "../footer/Footer";
 
 const Events = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <section className="events">
