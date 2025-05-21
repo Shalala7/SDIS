@@ -13,19 +13,7 @@ const News = () => {
         <div className="news-container">
           <div className="news-materials-first">
             <img src={mount} alt="" />
-            <div className="news-material-text">
-              <h5>Materials: Baking soda, vinegar</h5>
-              <h6>Volcano Eruption</h6>
-              <p>
-                Czech firefighters tackle large toxic train fire A train
-                transporting benzene, a carcinogen, derailed and caught fire on
-                Friday, prompting a large emergency response.
-              </p>
-              <div className="time-news">
-                <p>2 hrs ago</p>
-                <p>Europe</p>
-              </div>
-            </div>
+            
           </div>
           <hr />
           <div className="news-container-text">
