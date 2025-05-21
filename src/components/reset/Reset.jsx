@@ -10,7 +10,7 @@ const Reset = () => {
           <NavLink to="/home">
             <img src={sdisLogo} alt="logo" />
           </NavLink>
-          <h5>Sustinable Development Science and Innovation</h5>
+          <h5>Sustainable Economic Development and Innovation Platform</h5>
           <div className="form-reset">
             <h4>Reset Password</h4>
             <p>Enter your email and we will send you a password reset link.</p>

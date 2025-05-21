@@ -13,7 +13,7 @@ const Login = () => {
           <NavLink to="/home">
             <img src={sdisLogo} alt="logo" />
           </NavLink>
-          <h5>Sustinable Development Science and Innovation</h5>
+          <h5>Sustainable Economic Development and Innovation Platform</h5>
           <div className="form-login">
             <h5>Log in</h5>
             <p>Fill in your log in details below.</p>

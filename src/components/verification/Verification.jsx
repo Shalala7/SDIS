@@ -11,7 +11,7 @@ const Verification = () => {
           <NavLink to="/home">
             <img className="logo-verification" src={sdisLogo} alt="logo" />
           </NavLink>
-          <h4>Sustinable Development Science and Innovation</h4>
+          <h4>Sustainable Economic Development and Innovation Platform</h4>
           <img
             className="verification-img"
             src={verification}

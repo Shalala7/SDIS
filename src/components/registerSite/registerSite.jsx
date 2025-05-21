@@ -13,7 +13,7 @@ const RegisterSite = () => {
           <NavLink to="/home">
             <img src={sdisLogo} alt="logo" />
           </NavLink>
-          <h5>Sustinable Development Science and Innovation</h5>
+          <h5>Sustainable Economic Development and Innovation Platform</h5>
           <div className="form-register-site">
             <h5>Register</h5>
             <p>Fill in your register details below.</p>
