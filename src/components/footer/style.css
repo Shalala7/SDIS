@@ -143,6 +143,7 @@
 
   .menu-footer {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 20px;
     width: 100%;
     justify-content: space-around;

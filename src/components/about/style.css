@@ -738,17 +738,16 @@
   .about-second-container-text p {
     font-size: 0.9rem;
     font-weight: 450;
-    font-family: sans-serif;
-    letter-spacing: 0%;
+    letter-spacing: 0.5px;
   }
   .about-second-container-text hr {
     border: 1px solid #110d57;
   }
   .about-second-container-text h5 {
-    margin: 0;
+    margin: 10px 0;
   }
   .about-second-container-text ul li {
-    margin: 8px 0;
+    margin: 10px 0;
     font-size: 0.9rem;
   }
   .footer-about {

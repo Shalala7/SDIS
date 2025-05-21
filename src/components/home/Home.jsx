@@ -132,7 +132,7 @@ const Home = () => {
       },
       {
         breakpoint: 1160,
-        settings: { slidesToShow: 2 }
+        settings: { slidesToShow: 3 }
       },
       {
         breakpoint: 668,
@@ -140,22 +140,6 @@ const Home = () => {
       }
     ]
   };
-
-  function NextBtn({ onClick }) {
-    return (
-      <button className="second-next-btn" onClick={onClick}>
-        <IoIosArrowForward size={20} />
-      </button>
-    );
-  }
-
-  function PrevBtn({ onClick }) {
-    return (
-      <button className="second-prev-btn" onClick={onClick}>
-        <IoIosArrowBack size={20} />
-      </button>
-    );
-  }
 
   return (
     <>
@@ -308,17 +292,24 @@ const Home = () => {
             <p>{homeData.subscribe.subtitle}</p>
           </div>
           <form className="form-home">
-            {homeData.subscribe.formFields.map((field, index) => (
-              <div className="form-group" key={index}>
-                <label>{field.label}</label>
-                <input
-                  className="form-control"
-                  placeholder={field.placeholder}
-                  type={field.type}
-                />
-              </div>
-            ))}
-            <NavLink className="btn subscribe-btn-home">
+            <div className="form-group">
+              <label>Email</label>
+              <input
+                className="form-control"
+                placeholder="Enter your email"
+                type="email"
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Message</label>
+              <textarea
+                className="form-control"
+                placeholder="Enter your suggestions"
+              ></textarea>
+            </div>
+
+            <NavLink className="btn send-btn-home">
               {homeData.subscribe.buttonText}
             </NavLink>
           </form>

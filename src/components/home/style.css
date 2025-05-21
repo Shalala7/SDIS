@@ -1,7 +1,7 @@
 .first-home {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   display: grid;
   place-items: center;
 }
@@ -41,14 +41,6 @@
 .first-img-home {
   width: 40%;
 }
-@keyframes rotateLogo {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .first-img-home img {
   width: 370px;
@@ -67,14 +59,15 @@
 .second-home-container h4 {
   font-weight: 600;
   text-align: center;
-  
+  margin: 10px 0;
 }
 .second-home-imgs {
   position: relative;
 }
 
 .second-home-imgs img {
-  width: 250px;
+  /* width: 250px; */
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -99,8 +92,6 @@
     border: none;
     color: black;
   }
-
- 
 }
 
 .second-prev-btn {
@@ -136,11 +127,10 @@
   box-shadow: none;
 }
 
-
 .third-home {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   display: grid;
   place-items: center;
 }
@@ -266,7 +256,6 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-
 .fourth-left-home {
   width: 45%;
 }
@@ -316,7 +305,7 @@
 .fifth-home {
   width: 100%;
   min-height: 60vh;
-  background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
 }
 .fifth-home h2 {
   color: white;
@@ -361,8 +350,7 @@
 .subscribe-home {
   width: 100%;
   margin: 100px auto;
-  min-height: 50vh;
-  background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+  background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
 }
 .subscribe-home-container {
   width: 80%;
@@ -384,7 +372,6 @@
   display: flex;
   padding-top: 40px;
   gap: 15px;
-
   flex-wrap: wrap;
 }
 .form-home .btn {
@@ -402,8 +389,8 @@
   color: #110d57;
   font-weight: 600;
 }
-.form-group {
-  width: 45%;
+.form-home .form-group {
+  width: 100%;
   color: white !important;
 }
 
@@ -411,9 +398,9 @@
   .second-home {
     min-height: 550px;
   }
-  /* .second-home-imgs img {
-    width: 380px;
-  } */
+  .second-home-imgs img {
+    width: 250px;
+  }
   .second-home-container h4 {
     margin-left: 50px;
   }
@@ -430,7 +417,7 @@
   .first-home {
     width: 100%;
     min-height: 500px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -499,14 +486,14 @@
     grid-template-columns: repeat(3, 1fr); */
   }
   .second-home-imgs img {
-    width: 320px;
+    width: 90%;
     margin: 0 auto;
   }
 
   .third-home {
     width: 100%;
     min-height: 450px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -673,7 +660,7 @@
   .fifth-home {
     width: 100%;
     min-height: 320px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
     color: white;
@@ -696,7 +683,7 @@
     width: 100%;
     margin: 60px auto;
     min-height: 400px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .subscribe-home-container {
     width: 80%;
@@ -740,7 +727,7 @@
     width: 40%;
     color: white !important;
   }
-  .form-home .form-group input{
+  .form-home .form-group input {
     border-radius: 6px;
   }
 }
@@ -749,7 +736,7 @@
   .first-home {
     width: 100%;
     min-height: 500px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -823,7 +810,7 @@
   .third-home {
     width: 100%;
     min-height: 450px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -996,7 +983,7 @@
   .fifth-home {
     width: 100%;
     min-height: 320px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
     color: white;
@@ -1019,7 +1006,7 @@
     width: 100%;
     margin: 60px auto;
     min-height: 400px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .subscribe-home-container {
     width: 80%;
@@ -1069,7 +1056,7 @@
   .first-home {
     width: 100%;
     min-height: 500px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -1145,7 +1132,7 @@
   .third-home {
     width: 100%;
     min-height: 450px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -1319,7 +1306,7 @@
   .fifth-home {
     width: 100%;
     min-height: 300px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
     color: white;
@@ -1342,7 +1329,7 @@
     width: 100%;
     margin: 60px auto;
     min-height: 400px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .subscribe-home-container {
     width: 80%;
@@ -1391,7 +1378,7 @@
   .first-home {
     width: 100%;
     min-height: 500px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -1466,7 +1453,7 @@
   .third-home {
     width: 100%;
     min-height: 450px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -1639,7 +1626,7 @@
   .fifth-home {
     width: 100%;
     min-height: 260px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
     color: white;
@@ -1664,7 +1651,7 @@
     width: 100%;
     margin: 50px auto;
     min-height: 50vh;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .subscribe-home-container {
     width: 80%;
@@ -1755,7 +1742,7 @@
   .third-home {
     width: 100%;
     min-height: 450px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -1948,7 +1935,7 @@
   .third-home {
     width: 100%;
     min-height: 430px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -2139,8 +2126,7 @@
   .fifth-home {
     width: 100%;
     margin: 0 auto;
-    min-height: 380px;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
     color: white;
@@ -2167,7 +2153,7 @@
     width: 100%;
     margin: 50px auto;
     min-height: 35vh;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .subscribe-home-container {
     width: 90%;
@@ -2425,7 +2411,7 @@
     width: 100%;
     margin: 0 !important;
     min-height: 110vh;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
     display: grid;
     place-items: center;
   }
@@ -2616,7 +2602,7 @@
     width: 100%;
     margin: 0 auto;
     min-height: 60vh;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
     color: white;
@@ -2642,7 +2628,7 @@
     width: 100%;
     margin: 30px auto;
     min-height: 35vh;
-    background: linear-gradient(225deg, #0a0f47 0%, #1b2a7e 100%);
+    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .subscribe-home-container {
     width: 90%;
