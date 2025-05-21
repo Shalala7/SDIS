@@ -208,13 +208,7 @@
     width: 90%;
     margin: 20px auto;
   }
-  .small-div-events {
-    height: 70px;
-    padding-top: 35px;
-  }
-  .small-div-events h1 {
-    font-size: 1rem;
-  }
+ 
   .events-container {
     width: 90%;
     margin: 20px auto;
@@ -260,8 +254,8 @@
   }
 
   .small-div-events h1 {
-    font-size: 1.2rem;
-    padding-top: 60px;
+    font-size: 1.1rem;
+    padding-top: 90px;
   }
 }
 
@@ -277,6 +271,7 @@
   }
   .small-div-events h1 {
     font-size: 1rem !important;
+    padding-top: 40px;
   }
   .events-container {
     width: 90%;
