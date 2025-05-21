@@ -304,7 +304,6 @@
 }
 .fifth-home {
   width: 100%;
-  min-height: 60vh;
   background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
 }
 .fifth-home h2 {
@@ -659,7 +658,6 @@
   }
   .fifth-home {
     width: 100%;
-    min-height: 320px;
     background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
@@ -982,7 +980,6 @@
   }
   .fifth-home {
     width: 100%;
-    min-height: 320px;
     background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
@@ -1305,7 +1302,6 @@
   }
   .fifth-home {
     width: 100%;
-    min-height: 300px;
     background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
@@ -1625,7 +1621,6 @@
 
   .fifth-home {
     width: 100%;
-    min-height: 260px;
     background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
@@ -1834,9 +1829,7 @@
     height: 110px;
     width: auto; /* Şəkillərin enini avtomatik saxlayır */
   }
-  .fifth-home {
-    height: 300px;
-  }
+  
   .fifth-home-container {
     width: 95%;
     gap: 10px;
@@ -2601,7 +2594,6 @@
   .fifth-home {
     width: 100%;
     margin: 0 auto;
-    min-height: 60vh;
     background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
   }
   .fifth-home h2 {
