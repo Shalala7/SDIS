@@ -317,7 +317,6 @@ const Home = () => {
                   type={field.type}
                 />
               </div>
-              
             ))}
             <NavLink className="btn subscribe-btn-home">
               {homeData.subscribe.buttonText}
