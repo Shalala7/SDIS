@@ -40,7 +40,7 @@ const Footer = () => {
             ))}
           </ul>
           <ul>
-            <h5>Legal & Compliance</h5>
+            <h5>Legal&Compliance</h5>
             {footerData.privacy.map((link, index) => (
               <li key={index}>
                 <Link to={link.path}>{link.name}</Link>

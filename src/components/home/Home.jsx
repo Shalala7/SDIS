@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 import Footer from "../footer/Footer";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 import sdisLogo from "../../assets/images/sdisLogo.png";
 import goal1 from "../../assets/images/goal1.png";
@@ -36,6 +37,7 @@ const images = {
 };
 
 const Home = () => {
+  const navigate = useNavigate();
   const secondHomeRef = useRef(null);
   const fourthRef = useRef(null);
 
@@ -247,6 +249,7 @@ const Home = () => {
           >
             {homeData.news.articles.map((article, index) => (
               <div
+              onClick={() => navigate("/news")}
                 className="materials"
                 key={index}
                 style={{

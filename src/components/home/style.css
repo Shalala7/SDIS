@@ -243,6 +243,7 @@
 }
 
 .materials {
+  cursor: pointer;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -1900,9 +1901,9 @@
     margin: 30px auto;
   }
   .second-home-container h4 {
-    font-weight: 600;
+    font-weight: 650;
     margin-left: 10px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   .second-home-imgs {
@@ -1959,11 +1960,11 @@
     background-color: white;
     text-decoration: none;
     font-weight: 600;
-    width: 85%;
+    width: 80%;
     order: 3;
-    padding: 2px;
+    padding: 5px;
     margin: 10px auto;
-    border-radius: 10px;
+    border-radius: 6px;
     color: #110d57;
     cursor: pointer;
     transition-duration: 0.3s;
@@ -2123,8 +2124,9 @@
   }
   .fifth-home-container {
     width: 90%;
-    gap: 10px;
-    margin: 25px auto;
+    gap: 15px;
+    padding: 20px 0;
+    margin: 10px auto;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -2132,8 +2134,8 @@
     justify-content: center;
   }
   .fifth-home-container img {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     margin: 0 auto;
     align-items: center;
   }
@@ -2170,7 +2172,7 @@
     flex-wrap: wrap;
   }
   .form-home .btn {
-    width: 325px;
+    width: 250px;
     margin-bottom: 10px;
     color: white;
     background-color: transparent;

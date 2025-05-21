@@ -24,7 +24,7 @@ const Layout = () => {
             <NavLink to="/" className="navbar-brand d-flex align-items-center">
               <img src={sdisLogo} alt="logo" className="logo-img me-2" />
               <h5 className="logo-text m-0">
-                Sustainable Development <br /> Science and Innovation
+                Sustainable Economic <br /> Development and <br /> Innovation Platform
               </h5>
             </NavLink>
           </div>

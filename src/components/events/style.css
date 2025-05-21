@@ -22,11 +22,20 @@
   grid-template-columns: repeat(3, auto);
 }
 .img-event {
+  cursor: pointer;
   position: relative;
   justify-content: center;
   display: flex;
   align-items: center;
 }
+.img-event img {
+  transition: transform 1s ease;
+}
+
+.img-event:hover img {
+  transform: scale(0.95); /* 0.95 = 95% ölçü */
+}
+
 .text-event {
   position: absolute;
   display: flex;

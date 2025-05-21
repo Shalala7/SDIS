@@ -11,6 +11,7 @@ import Login from "./components/login/Login";
 import Verification from "./components/verification/Verification";
 import Reset from "./components/reset/Reset";
 import RegisterSite from "./components/registerSite/registerSite";
+import EventDetails from "./components/eventDetails/eventDetails";
 
 const Main = () => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const Main = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/news" element={<News />} />
+        <Route path="/eventDetails" element={<EventDetails />} />
         <Route path="/events" element={<Events />} />
         <Route path="/registerEvent" element={<RegisterEvent />} />
         <Route path="/registerSite" element={<RegisterSite />} />

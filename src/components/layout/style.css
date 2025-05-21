@@ -1,3 +1,4 @@
+
 /* Navbar Container */
 .container-fluid {
   display: flex;
@@ -11,8 +12,10 @@
 .logo {
   display: flex;
   align-items: center;
-  width: 20%;
   order: 1;
+}
+.logo a{
+  gap: 10px;
 }
 .layout-navbar {
   display: flex;
@@ -26,6 +29,7 @@
 
 /* Logo Text */
 .logo-text {
+  margin-left: 10px;
   font-size: 14px;
   font-weight: 650;
   color: #110f42;
