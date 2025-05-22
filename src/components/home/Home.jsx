@@ -20,7 +20,10 @@ import mount from "../../assets/images/mount.png";
 import newsH1 from "../../assets/images/newsH1.png";
 import newsH2 from "../../assets/images/newsH2.png";
 import newsH3 from "../../assets/images/newsH3.png";
-import empty from "../../assets/images/empty.png";
+import starlogo from "../../assets/images/starlogo.jpg";
+import adalogo from "../../assets/images/adalogo.webp";
+import iddalogo from "../../assets/images/iddalogo.png";
+import logoo from "../../assets/images/logoo.png";
 
 const images = {
   goal1,
@@ -33,7 +36,10 @@ const images = {
   newsH1,
   newsH2,
   newsH3,
-  empty
+  starlogo,
+  logoo,
+  adalogo,
+  iddalogo
 };
 
 const Home = () => {
@@ -249,7 +255,7 @@ const Home = () => {
           >
             {homeData.news.articles.map((article, index) => (
               <div
-              onClick={() => navigate("/news")}
+                onClick={() => navigate("/news")}
                 className="materials"
                 key={index}
                 style={{
@@ -277,8 +283,17 @@ const Home = () => {
       <section className="fifth-home">
         <h2>{homeData.partners.title}</h2>
         <div className="fifth-home-container">
+          {/* Fading effects */}
+          <div className="fade-left"></div>
+          <div className="fade-right"></div>
+
           <div className="partner-slide">
             {homeData.partners.logos
+              .concat(homeData.partners.logos)
+              .concat(homeData.partners.logos)
+              .concat(homeData.partners.logos)
+              .concat(homeData.partners.logos)
+              .concat(homeData.partners.logos)
               .concat(homeData.partners.logos)
               .map((logo, index) => (
                 <img key={index} src={images[logo]} alt={`partner-${index}`} />

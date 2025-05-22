@@ -296,7 +296,7 @@
 }
 .fifth-home {
   width: 100%;
-  background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
+  background-color: #0a0f47;
 }
 .fifth-home h2 {
   color: white;
@@ -306,6 +306,7 @@
 .fifth-home-container {
   width: 60%;
   margin: 30px auto;
+  position: relative;
   display: grid;
   overflow: hidden;
   padding: 30px;
@@ -316,14 +317,37 @@
 
 .fifth-home-container .partner-slide {
   display: flex;
-  animation: scrollRight 20s linear infinite;
+  animation: scrollRight 30s linear infinite;
+}
+.fade-left,
+.fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #0e084c, transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #0e084c, transparent);
 }
 
 .fifth-home-container img {
   width: 140px;
   height: 140px;
   margin-right: 40px;
+  border-radius: 50%;
   transition: transform 0.3s ease;
+}
+.fifth-home-container img:last-child {
+  margin-right: 0;
 }
 
 .fifth-home-container img:hover {
@@ -1617,7 +1641,7 @@
 
   .fifth-home {
     width: 100%;
-    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
+    background-color: #0a0f47;
   }
   .fifth-home h2 {
     color: white;
@@ -2115,7 +2139,7 @@
   .fifth-home {
     width: 100%;
     margin: 0 auto;
-    background: linear-gradient(225deg, #0a0f47 50%, #340144 100%);
+    background-color: #0a0f47;
   }
   .fifth-home h2 {
     color: white;
@@ -2124,20 +2148,18 @@
   }
   .fifth-home-container {
     width: 90%;
-    gap: 15px;
-    padding: 20px 0;
     margin: 10px auto;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
+  .partner-slide {
+    gap: 10px;
+  }
   .fifth-home-container img {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
   .subscribe-home {
     width: 100%;
@@ -2173,7 +2195,7 @@
   }
   .form-home .btn {
     width: 250px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     color: white;
     background-color: transparent;
     border: 1px solid white;
@@ -2271,7 +2293,7 @@
   }
   .form-home .btn {
     width: 285px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: white;
     background-color: transparent;
     border: 1px solid white;

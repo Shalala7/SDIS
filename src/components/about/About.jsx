@@ -1,11 +1,12 @@
 import "./style.css";
 import Footer from "../footer/Footer";
 import { useEffect, useState } from "react";
-import rec1 from "../../assets/images/rec1.png";
-import rec2 from "../../assets/images/rec2.png";
-import rec3 from "../../assets/images/rec3.png";
 
-const images = { rec1, rec2, rec3 };
+import klk from "../../assets/images/klk.jpg";
+import hs from "../../assets/images/hs.jpg";
+import about from "../../assets/images/about.jpg";
+
+const images = { hs, klk, about };
 
 const About = () => {
   const [aboutData, setAboutData] = useState(null);
@@ -35,7 +36,10 @@ const About = () => {
               <img src={images[aboutData.sections[0].images[0]]} alt="rec3" />
             </div>
             <div className="imgs-about">
-              <img src={images[aboutData.sections[0].images[1]]} alt="rec1" />
+              <img
+                src={images[aboutData.sections[0].images[1]]}
+                alt="starlogo"
+              />
               <img src={images[aboutData.sections[0].images[2]]} alt="rec2" />
             </div>
           </div>

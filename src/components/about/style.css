@@ -14,11 +14,13 @@
   text-align: center;
 }
 .about-first-container {
-  width: 80%;
+  width: 90%;
   display: flex;
+ 
   margin: 50px auto;
 }
 .text {
+  
   width: 45%;
   padding: 20px;
 }
@@ -30,31 +32,37 @@
   margin: 40px 0;
 }
 .images-about-first {
-  width: 50%;
-  height: 100%;
+ 
+  width: 55%;
   display: flex;
-  justify-content: flex-end; /* Bütün elementləri sağa itələyir */
-  align-items: center; /* Ortaya gətirir */
+  gap: 20px;
+  align-items: center; /* divləri eyni hündürlükdə edir */
+  
 }
 .img-about {
-  width: 49%;
+  width: 60%;
+  flex: 1.5;
+  display: flex;
   justify-content: flex-end;
 }
 .img-about img {
-  height: 370px;
-  width: 100%;
+  width: 100%;        /* daha geniş */
+  height: 100%;      /* daha qısa hündürlük */
+  object-fit: contain;
 }
+
 /* Boz divləri sağa yerləşdirmək */
 .imgs-about {
+  flex: 1;
   width: 40%;
   display: flex;
-  justify-content: flex-end;
+  
   flex-direction: column; /* Dikey düzülüş */
   align-items: flex-end; /* Sağ hizalama */
-  gap: 35px; /* Şəkillər arasında boşluq */
+  gap: 30px; /* Şəkillər arasında boşluq */
 }
 .imgs-about img {
-  height: 165px;
+  height: 145px;
   width: auto; /* Şəkillərin enini avtomatik saxlayır */
 }
 .about-second {
@@ -207,7 +215,7 @@
     text-align: center;
   }
   .about-first-container {
-    width: 80%;
+    width: 90%;
     display: flex;
     margin: 50px auto;
   }
@@ -222,38 +230,39 @@
     font-size: 1.2rem;
     margin: 40px 0;
   }
-  .images-about-first {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end; /* Bütün elementləri sağa itələyir */
-    align-items: center; /* Ortaya gətirir */
-  }
-  
-  .img-about {
-    width: 49%;
-    justify-content: flex-end;
-  }
-  
-  .img-about img {
-    height: 350px;
-    width: 100%;
-  }
-  
-  /* Boz divləri sağa yerləşdirmək */
-  .imgs-about {
-    width: 45%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column; /* Dikey düzülüş */
-    align-items: flex-end; /* Sağ hizalama */
-    gap: 35px; /* Şəkillər arasında boşluq */
-  }
-  
-  .imgs-about img {
-    height: 155px;
-    width: auto; /* Şəkillərin enini avtomatik saxlayır */
-  }
+ .images-about-first {
+  width: 55%;
+  display: flex;
+  gap: 20px;
+  align-items: center; /* divləri eyni hündürlükdə edir */
+  justify-content: flex-end;
+}
+.img-about {
+  width: 60%;
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-end;
+}
+.img-about img {
+  width: 100%;        /* daha geniş */
+  height: 100%;      /* daha qısa hündürlük */
+  object-fit: contain;
+}
+
+/* Boz divləri sağa yerləşdirmək */
+.imgs-about {
+  flex: 1;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column; /* Dikey düzülüş */
+  align-items: flex-end; /* Sağ hizalama */
+  gap: 20px; /* Şəkillər arasında boşluq */
+}
+.imgs-about img {
+  height: 145px;
+  width: auto; /* Şəkillərin enini avtomatik saxlayır */
+}
   
   .about-second {
     width: 100%;
@@ -672,15 +681,16 @@
     margin: 20px 0;
   }
   .images-about-first {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center; /* Ortaya gətirir */
   }
 
   .img-about {
-    width: 49%;
+    width: 50%;
   }
 
   .img-about img {
@@ -699,7 +709,7 @@
   }
 
   .imgs-about img {
-    height: 105px;
+    height: 100px;
     width: auto; /* Şəkillərin enini avtomatik saxlayır */
   }
 
@@ -792,15 +802,16 @@
     margin: 10px 0;
   }
   .images-about-first {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center; /* Ortaya gətirir */
   }
 
   .img-about {
-    width: 49%;
+    width: 50%;
   }
 
   .img-about img {
@@ -819,7 +830,7 @@
   }
 
   .imgs-about img {
-    height: 90px;
+    height: 85px;
     width: auto; /* Şəkillərin enini avtomatik saxlayır */
   }
 
@@ -914,15 +925,16 @@
     margin: 10px 0;
   }
   .images-about-first {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center; /* Ortaya gətirir */
   }
 
   .img-about {
-    width: 49%;
+    width: 50%;
   }
 
   .img-about img {
@@ -941,7 +953,7 @@
   }
 
   .imgs-about img {
-    height: 86px;
+    height: 75px;
     width: auto; /* Şəkillərin enini avtomatik saxlayır */
   }
 

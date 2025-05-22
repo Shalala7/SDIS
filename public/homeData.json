@@ -61,7 +61,7 @@
     },
     "partners": {
       "title": "Our Partners",
-      "logos": ["empty", "empty", "empty", "empty", "empty"]
+      "logos": ["starlogo", "adalogo", "iddalogo", "logoo"]
     },
     "subscribe": {
       "title": "Your feedback is valuable to us. Share your suggestions and comments!",
