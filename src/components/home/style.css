@@ -127,8 +127,7 @@
 }
 
 .third-home-container {
-  width: 84%;
-  height: 400px;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +137,7 @@
 }
 
 .third-home-text {
-  width: 32%;
+  width: 45%;
 }
 
 .third-home-text h1 {
@@ -148,7 +147,7 @@
 .third-home-text p {
   font-size: 1rem;
   color: white;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .home-see-btn {
@@ -157,8 +156,7 @@
   font-weight: 600;
   width: 37%;
   padding: 10px;
-  margin: 10px 0;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #110d57;
   cursor: pointer;
   transition-duration: 0.3s;
@@ -173,14 +171,15 @@
 
 /* Qara div və içindəki elementlər */
 .third-home-images {
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: flex-end; /* Bütün elementləri sağa itələyir */
   align-items: center; /* Ortaya gətirir */
 }
 
 .third-home-img {
-  width: 49%;
+  width: 50%;
+  flex: 2;
   justify-content: flex-end;
 }
 
@@ -206,7 +205,7 @@
 
 .fourth-home {
   width: 100%;
-  min-height: 100vh;
+ 
 }
 .fourth-home-container {
   width: 90%;
@@ -231,21 +230,12 @@
   background-color: rgb(240, 240, 240);
   border-radius: 10px;
 }
-.fourth-left-home,
-.fourth-right-home {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
 
-.fourth-left-home.visible,
-.fourth-right-home.visible {
-  opacity: 1;
-}
+
 
 .materials {
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  
 }
 
 .fourth-left-home {
@@ -519,7 +509,7 @@
 
   .third-home-container {
     width: 90%;
-    height: 400px;
+    
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -547,9 +537,9 @@
     background-color: white;
     text-decoration: none;
     font-weight: 600;
-    width: 330px;
+    width: 310px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #110d57;
     cursor: pointer;
     transition-duration: 0.3s;
@@ -1984,9 +1974,9 @@
     background-color: white;
     text-decoration: none;
     font-weight: 600;
-    width: 80%;
+    width: 200px;
     order: 3;
-    padding: 5px;
+    padding: 3px;
     margin: 10px auto;
     border-radius: 6px;
     color: #110d57;
@@ -2238,6 +2228,7 @@
 
   .third-home-img {
     width: 50%;
+    flex: 2;
     justify-content: flex-end;
   }
 
@@ -2246,7 +2237,7 @@
     width: 80%;
   }
   .home-see-btn {
-    width: 70%;
+    width: 150px;
     margin: 10px auto !important;
   }
   /* Boz divləri sağa yerləşdirmək */
@@ -2260,7 +2251,7 @@
 
   .third-home-imgs img {
     height: 60px;
-    width: 80px; /* Şəkillərin enini avtomatik saxlayır */
+    width: 60px; /* Şəkillərin enini avtomatik saxlayır */
   }
   .home-see-btn {
     margin: 5px;
@@ -2307,9 +2298,7 @@
 }
 
 @media (min-width: 321px) and (max-width: 332px) {
-  .third-home {
-    min-height: 90vh;
-  }
+  
   .materials img {
     height: 200px;
   }
@@ -2344,6 +2333,16 @@
     height: 130px; /* Hündürlük stretch ilə uyğunlaşacaq */
     object-fit: cover; /* şəkil boşluğa uyğun uzansın, kəsilmə olmadan */
     border-radius: 6px;
+  }
+  .third-home-img{
+    flex: 2;
+  }
+  .third-home-img img{
+    width: 100%;
+  }
+  .home-see-btn{
+    width: 120px;
+    margin: 5px 0;
   }
 }
 
@@ -2567,7 +2566,6 @@
   }
   .fourth-right-home {
     width: 100%;
-    min-height: 60vh;
     display: flex;
     flex-direction: column; /* Div-ləri dikey yerləşdirmək üçün */
     justify-content: space-between; /* İlk div yuxarıda, ikinci div ortada, üçüncü div aşağıda */

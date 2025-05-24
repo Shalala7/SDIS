@@ -16,8 +16,8 @@
       "buttonText": "See us",
       "buttonLink": "/about",
       "images": {
-        "large": "rec3",
-        "small": ["rec1", "rec2"]
+        "large": "hs",
+        "small": ["klk", "about"]
       }
     },
     "news": {

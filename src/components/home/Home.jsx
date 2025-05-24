@@ -13,9 +13,9 @@ import sdisLogo from "../../assets/images/sdisLogo.png";
 import goal1 from "../../assets/images/goal1.png";
 import goal2 from "../../assets/images/goal2.png";
 import goal3 from "../../assets/images/goal3.png";
-import rec1 from "../../assets/images/rec1.png";
-import rec2 from "../../assets/images/rec2.png";
-import rec3 from "../../assets/images/rec3.png";
+import klk from "../../assets/images/klk.jpg";
+import hs from "../../assets/images/hs.jpg";
+import about from "../../assets/images/about.jpg";
 import mount from "../../assets/images/mount.png";
 import newsH1 from "../../assets/images/newsH1.png";
 import newsH2 from "../../assets/images/newsH2.png";
@@ -29,9 +29,9 @@ const images = {
   goal1,
   goal2,
   goal3,
-  rec1,
-  rec2,
-  rec3,
+  hs,
+  klk,
+  about,
   mount,
   newsH1,
   newsH2,
@@ -46,11 +46,6 @@ const Home = () => {
   const navigate = useNavigate();
   const secondHomeRef = useRef(null);
   const fourthRef = useRef(null);
-
-  // Fourth section animasiya üçün state-lər
-  const [showLeft, setShowLeft] = useState(false);
-  const [showRight, setShowRight] = useState(false);
-  const [showMaterialsIndexes, setShowMaterialsIndexes] = useState([]);
 
   // Second section slider autoplay state
   const [startAutoplay, setStartAutoplay] = useState(false);
@@ -75,52 +70,6 @@ const Home = () => {
     return () => {
       if (secondHomeRef.current) {
         observer.unobserve(secondHomeRef.current);
-      }
-    };
-  }, []);
-
-  // IntersectionObserver - fourth section (animasiya)
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // Sıfırla
-          setShowLeft(false);
-          setShowRight(false);
-          setShowMaterialsIndexes([]);
-
-          // left div dərhal göstər
-          setTimeout(() => {
-            setShowLeft(true);
-          }, 0);
-
-          // right div 1 saniyə sonra göstər və materials-ları 0.5 saniyə fərqlə göstər
-          setTimeout(() => {
-            setShowRight(true);
-
-            homeData.news.articles.forEach((_, index) => {
-              setTimeout(() => {
-                setShowMaterialsIndexes((prev) => [...prev, index]);
-              }, index * 500);
-            });
-          }, 1000);
-        } else {
-          // Görünmürsə gizlət
-          setShowLeft(false);
-          setShowRight(false);
-          setShowMaterialsIndexes([]);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (fourthRef.current) {
-      observer.observe(fourthRef.current);
-    }
-
-    return () => {
-      if (fourthRef.current) {
-        observer.unobserve(fourthRef.current);
       }
     };
   }, []);
@@ -215,7 +164,7 @@ const Home = () => {
       </section>
 
       {/* News Section */}
-      <section className="fourth-home" ref={fourthRef}>
+      <section className="fourth-home">
         <div className="fourth-home-container">
           <div className="fourth-heading-home">
             <h2>{homeData.news.title}</h2>
@@ -227,13 +176,7 @@ const Home = () => {
             </NavLink>
           </div>
 
-          <div
-            className={`fourth-left-home ${showLeft ? "visible" : "hidden"}`}
-            style={{
-              opacity: showLeft ? 1 : 0,
-              transition: "opacity 0.5s ease-in-out"
-            }}
-          >
+          <div className="fourth-left-home">
             <img src={images[homeData.news.featured.image]} alt="news" />
             <h5>{homeData.news.featured.title}</h5>
             <h6>{homeData.news.featured.subtitle}</h6>
@@ -246,22 +189,12 @@ const Home = () => {
             </NavLink>
           </div>
 
-          <div
-            className={`fourth-right-home ${showRight ? "visible" : "hidden"}`}
-            style={{
-              opacity: showRight ? 1 : 0,
-              transition: "opacity 0.5s ease-in-out"
-            }}
-          >
+          <div className="fourth-right-home">
             {homeData.news.articles.map((article, index) => (
               <div
                 onClick={() => navigate("/news")}
                 className="materials"
                 key={index}
-                style={{
-                  opacity: showMaterialsIndexes.includes(index) ? 1 : 0,
-                  transition: "opacity 0.5s ease-in-out"
-                }}
               >
                 <img src={images[article.image]} alt={`news-${index}`} />
                 <div className="materials-text">
